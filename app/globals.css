@@ -201,3 +201,103 @@ html {
     background-position: 0% 50%;
   }
 }
+
+/* Smooth performance for the canvas */
+canvas {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Ensure proper stacking context */
+.relative {
+  isolation: isolate;
+}
+
+/* --- Aurora (blurred blobs) --- */
+.aurora-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.45;
+  transform: translate3d(0,0,0);
+  will-change: transform, opacity;
+  animation: auroraFloat 6s ease-in-out infinite;
+}
+
+/* first blob — top-left */
+.aurora-blob--one {
+  width: 60vw;
+  height: 60vw;
+  background: rgba(222, 200, 255, 0.9); /* purple */
+  top: -20%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+/* second blob — bottom-right */
+.aurora-blob--two {
+  width: 60vw;
+  height: 60vw;
+  background: rgba(255, 206, 222, 0.9); /* pink */
+  bottom: -20%;
+  right: -10%;
+  animation-delay: 2s;
+}
+
+@keyframes auroraFloat {
+  0% { transform: translateY(0) scale(1); opacity: .45; }
+  50% { transform: translateY(6vh) scale(1.03); opacity: .55; }
+  100% { transform: translateY(0) scale(1); opacity: .45; }
+}
+
+/* small helper so background doesn't capture pointer events */
+.pointer-events-none {
+  pointer-events: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee-slow {
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee-fast {
+  animation: marquee 15s linear infinite;
+}
+
+.animate-marquee-left {
+  animation: marquee-left 25s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 25s linear infinite;
+}
