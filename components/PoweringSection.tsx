@@ -19,16 +19,19 @@ export default function PoweringSection({
   title = "Powering",
   logos = [
     { src: "/Images/bookpridespublishing.png", alt: "bookpridespublishing" },
-    { src: "/Images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
     { src: "/Images/webdesignexperts.png", alt: "webdesignexperts" },
+    { src: "/Images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
     { src: "/Images/logo-4.png", alt: "Customer 4" },
   ],
 }: Props) {
   return (
-    <section className="py-12 bg-gradient-to-b from-white to-[#fbf6fb]">
+    <section className="py-12 bg-gradient-to-b">
       <div className="max-w-7xl mx-auto px-6 lg:px-20">
         <div className="text-center mb-8">
-          <p className="text-sm uppercase tracking-wider text-[#7c5aa0]">{title}</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#483953]">
+            {title}
+          </h2>
+          <p className="mt-2 text-sm uppercase tracking-wider text-[#7c5aa0]">Trusted by teams worldwide</p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-items-center">
@@ -48,15 +51,13 @@ export default function PoweringSection({
                   alt={logo.alt}
                   width={180}
                   height={64}
-                  className="object-contain h-10 sm:h-14 transition-all duration-350 ease-[cubic-bezier(.22,.9,.39,1)] filter saturate-90 hover:saturate-100 hover:brightness-105"
+                  className="object-contain h-10 sm:h-14 transition-all duration-350 ease-[cubic-bezier(.22,.9,.39,1)] filter saturate-90 hover:saturate-100 hover:brightness-105 min-w-56"
                   priority={idx < 2}
                 />
               </div>
             </a>
           ))}
         </div>
-
-        <p className="mt-6 text-center text-xs text-[#a385a9]">Official logos — full color with subtle interactive polish.</p>
       </div>
     </section>
   );
