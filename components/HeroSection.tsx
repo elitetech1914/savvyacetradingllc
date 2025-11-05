@@ -38,7 +38,7 @@ const HeroSection = () => {
           Our mission is to empower businesses and individuals by harnessing the full
           potential of the digital landscape.
         </p>
-      <Link href="/contact" className="relative z-10">
+      <Link href="#contact" className="relative z-10">
         <CTAButton />
       </Link>
       <InfiniteMarquee

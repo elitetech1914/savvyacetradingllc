@@ -17,7 +17,9 @@ export default function Home(){
     <ServicesSection/>
     <TestimonialsLightTheme/>
     <Pricing />
+    <div className="relative">
     <ContactForm />
+    </div>
     <FAQSection />
     <Footer />
   </>

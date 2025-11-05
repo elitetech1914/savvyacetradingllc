@@ -5,7 +5,7 @@ export default function Example() {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="contact">
       {/* Background decoration */}
       <div
         aria-hidden="true"
