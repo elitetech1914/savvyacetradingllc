@@ -5,6 +5,7 @@ import ServicesSection from "../components/Services";
 import Pricing from "@/components/Pricing";
 import ContactForm from "@/components/ContactForm";
 import FAQSection from "@/components/FAQSection";
+import Footer from "@/components/Footer";
 
 
 export default function Home(){
@@ -16,6 +17,7 @@ export default function Home(){
     <Pricing />
     <ContactForm />
     <FAQSection />
+    <Footer />
   </>
   );
 }

@@ -9,14 +9,14 @@ type FAQItem = {
 
 const faqs: FAQItem[] = [
   {
-    question: "How secure is Flowline?",
+    question: "How secure is ERS Technologies?",
     answer:
-      "Flowline stores data encrypted at rest and in transit, and we follow industry best practices for access control and auditing.",
+      "ERS Technologies stores data encrypted at rest and in transit, and we follow industry best practices for access control and auditing.",
   },
   {
     question: "Can I integrate my existing tools?",
     answer:
-      "Yes — Flowline offers a growing list of integrations and a public API so you can connect your current stack quickly.",
+      "Yes — ERS Technologies offers a growing list of integrations and a public API so you can connect your current stack quickly.",
   },
   {
     question: "How quickly can I see results?",
@@ -31,7 +31,7 @@ const faqs: FAQItem[] = [
   {
     question: "Is there a free trial available?",
     answer:
-      "Yes — try Flowline free for 14 days. No credit card required to get started.",
+      "Yes — try ERS Technologies free for 14 days. No credit card required to get started.",
   },
 ];
 
