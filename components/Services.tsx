@@ -1,16 +1,16 @@
 import React from "react";
-import { FileText, Image, BookOpen, Megaphone, Cpu, Bot, Smartphone, Gamepad } from "lucide-react";
+import { FileText, Image, BookOpen, Megaphone, Bot, Smartphone, Gamepad, Monitor, RectangleGoggles } from "lucide-react";
 
 const SERVICES = [
   { id: "writing-editing", title: "Writing & Editing", desc: "Ghostwriting, editorial support, and polished copy for authors.", items: ["Ghostwriting", "Writing Assistance", "Proofreading", "Editing", "Formatting", "Copywriting", "Article Writing", "Blog Writing"], icon: FileText },
   { id: "design-creative", title: "Design & Creative", desc: "Covers book covers, illustrations and merch for author platforms.", items: ["Book Cover Design", "Illustrations", "Merchandise Design (author websites)"], icon: Image },
   { id: "publishing-distribution", title: "Publishing & Distribution", desc: "Support for putting books into the world — printing, rights, and commerce.", items: ["Copyright Registration", "Printing Press Services", "Amazon Seller Account Setup", "Author Central Account Creation", "E-commerce Integration for Author Websites"], icon: BookOpen },
   { id: "marketing-promotion", title: "Marketing & Promotion", desc: "Marketing strategies tailored for books and authors.", items: ["Book Marketing Strategy", "SEO (Search Engine Optimization)", "Digital Marketing Campaigns", "Amazon PPC (Pay-Per-Click)", "Billboard Marketing", "Reviews Management (all platforms)"], icon: Megaphone },
-  { id: "vr-simulation", title: "VR Simulation Services", desc: "Custom immersive simulations, training and interactive walkthroughs.", items: ["Custom VR Training Simulations", "VR Game Development", "3D Environment Design", "Architectural & Industrial Walkthroughs", "Interactive VR Experiences"], icon: Cpu },
+  { id: "vr-simulation", title: "VR Simulation Services", desc: "Custom immersive simulations, training and interactive walkthroughs.", items: ["Custom VR Training Simulations", "VR Game Development", "3D Environment Design", "Architectural & Industrial Walkthroughs", "Interactive VR Experiences"], icon: RectangleGoggles },
   { id: "ai-agent-services", title: "AI Agent Services", desc: "Intelligent agents for support, outreach, research and automation.", items: ["Customer Support AI", "Lead generation, follow-ups & email outreach", "Research Agents", "Coding Assistants", "Data Agents", "Voice Agents"], icon: Bot },
   { id: "app-development", title: "App Development Services", desc: "From concept to launch — cross-platform apps and backend integrations.", items: ["UI/UX Design", "Cross-platform App Development", "Backend & API Integration", "App Maintenance & Updates", "Custom Business App Solutions", "App Prototyping & Wireframing"], icon: Smartphone },
   { id: "game-development", title: "Game Development", desc: "2D & 3D games, engines, and player-first experiences.", items: ["2D & 3D Game Development", "Unity & Unreal Engine Projects", "Mobile Game Development", "Multiplayer Game Integration", "Game UI/UX Design"], icon: Gamepad },
-  { id: "ui-ux-design", title: "UI/UX Design", desc: "Creating intuitive and engaging user experiences.", items: ["User Research", "Wireframing", "Prototyping", "User Testing", "Visual Design"], icon: Gamepad }
+  { id: "ui-ux-design", title: "UI/UX Design", desc: "Creating intuitive and engaging user experiences.", items: ["User Research", "Wireframing", "Prototyping", "User Testing", "Visual Design"], icon: Monitor }
 ];
 
 export default function ServicesSection() {

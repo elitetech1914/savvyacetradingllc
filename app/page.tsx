@@ -1,9 +1,10 @@
 "use client";
 import TestimonialsLightTheme from "@/components/TestimonialsLightTheme";
-import HeroSection from "./components/HeroSection";
-import ServicesSection from "./components/Services";
+import HeroSection from "../components/HeroSection";
+import ServicesSection from "../components/Services";
 import Pricing from "@/components/Pricing";
-
+import ContactForm from "@/components/ContactForm";
+import FAQSection from "@/components/FAQSection";
 
 
 export default function Home(){
@@ -13,6 +14,8 @@ export default function Home(){
     <ServicesSection/>
     <TestimonialsLightTheme/>
     <Pricing />
+    <ContactForm />
+    <FAQSection />
   </>
   );
 }

@@ -301,3 +301,23 @@ canvas {
 .animate-marquee-right {
   animation: marquee-right 25s linear infinite;
 }
+
+.fadeContainer {
+  overflow: auto;
+  /* smooth fade at the top: long transition from 0% -> 25% -> 60% -> 100% */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0,0,0,0.25) 25%,
+    rgba(0,0,0,0.85) 60%,
+    black 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0,0,0,0.25) 25%,
+    rgba(0,0,0,0.85) 60%,
+    black 100%
+  );
+}
+

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Onest } from 'next/font/google'
 import "./globals.css";
+import BottomBar from "@/components/BottomBar";
 
 const onest = Onest({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({
         className={onest.className}
       >
         {children}
+        <BottomBar />
       </body>
     </html>
   );
