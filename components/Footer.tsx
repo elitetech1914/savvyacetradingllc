@@ -62,10 +62,9 @@ export default function Footer() {
             <div>
               <h4 className="text-sm font-semibold text-[#5a3760] mb-4">Company</h4>
               <nav className="flex flex-col gap-2 items-center text-[#7b597f]">
-                <Link href="#" className="text-sm hover:text-[#5a3760]">About</Link>
-                <Link href="#" className="text-sm hover:text-[#5a3760]">Careers</Link>
-                <Link href="#" className="text-sm hover:text-[#5a3760]">Contact</Link>
-                <Link href="#" className="text-sm hover:text-[#5a3760]">Blog</Link>
+                <Link href="#services" className="text-sm hover:text-[#5a3760]">Services</Link>
+                <Link href="#reviews" className="text-sm hover:text-[#5a3760]">Reviews</Link>
+                <Link href="#pricing" className="text-sm hover:text-[#5a3760]">Pricing</Link>
               </nav>
               </div>
             </div>
