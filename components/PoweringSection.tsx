@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 type Logo = {
   src: string; // path or external url
@@ -36,7 +37,7 @@ export default function PoweringSection({
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-items-center">
           {logos.map((logo, idx) => (
-            <a
+            <Link
               key={idx}
               href={logo.href ?? "#"}
               target={logo.href ? "_blank" : undefined}
@@ -54,7 +55,7 @@ export default function PoweringSection({
                   className="object-contain h-10 sm:h-14 transition-all duration-350 ease-[cubic-bezier(.22,.9,.39,1)] filter saturate-90 hover:saturate-100 hover:brightness-105 min-w-56"
                 />
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
