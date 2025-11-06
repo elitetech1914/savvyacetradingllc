@@ -56,21 +56,12 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex flex-col md:flex-row md:items-start justify-around items-center">
-            <div>
-            <h4 className="text-sm font-semibold text-[#5a3760] mb-4">Product</h4>
-            <nav className="flex flex-col gap-2 text-[#7b597f]">
-              <Link href="#" className="text-sm hover:text-[#5a3760]">Features</Link>
-              <Link href="#" className="text-sm hover:text-[#5a3760]">Integrations</Link>
-              <Link href="#" className="text-sm hover:text-[#5a3760]">Pricing</Link>
-              <Link href="#" className="text-sm hover:text-[#5a3760]">Docs</Link>
-            </nav>
-            </div>
+          <div className="flex flex-col md:flex-row md:items-start justify-around items-center max-md:items-start max-md:gap-8">
 
             <div>
             <div>
               <h4 className="text-sm font-semibold text-[#5a3760] mb-4">Company</h4>
-              <nav className="flex flex-col gap-2 text-[#7b597f]">
+              <nav className="flex flex-col gap-2 items-center text-[#7b597f]">
                 <Link href="#" className="text-sm hover:text-[#5a3760]">About</Link>
                 <Link href="#" className="text-sm hover:text-[#5a3760]">Careers</Link>
                 <Link href="#" className="text-sm hover:text-[#5a3760]">Contact</Link>

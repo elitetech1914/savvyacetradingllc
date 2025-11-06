@@ -19,10 +19,10 @@ type Props = {
 export default function PoweringSection({
   title = "Powering",
   logos = [
-    { src: "/images/bookpridespublishing.png", alt: "bookpridespublishing" },
-    { src: "/images/webdesignexperts.png", alt: "webdesignexperts" },
-    { src: "/images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
-    { src: "/images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
+    { src: "/images/bookpridespublishing.png", alt: "bookpridespublishing", href: "https://bookpridespublishing.com" },
+    { src: "/images/webdesignexperts.png", alt: "webdesignexperts", href: "https://webdesignexperts.com" },
+    { src: "/images/Venturebookpublishing.png", alt: "Venturebookpublishing", href: "https://venturebookpublisher.com" },
+    { src: "/images/Venturebookpublishing.png", alt: "Venturebookpublishing", href: "https://venturebookpublisher.com" },
   ],
 }: Props) {
   return (
@@ -35,14 +35,14 @@ export default function PoweringSection({
           <p className="mt-2 text-sm uppercase tracking-wider text-[#7c5aa0]">Trusted by teams worldwide</p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-items-center">
+        <div className="grid lg:grid-cols-4 gap-6 items-center justify-items-center">
           {logos.map((logo, idx) => (
             <Link
               key={idx}
               href={logo.href ?? "#"}
               target={logo.href ? "_blank" : undefined}
               rel={logo.href ? "noopener noreferrer" : undefined}
-              className="flex items-center justify-center w-full p-4 rounded-lg bg-white/60 shadow-sm transition-transform duration-350 ease-[cubic-bezier(.22,.9,.39,1)] hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#e9dff6]"
+              className="flex items-center justify-center w-full p-4 rounded-lg bg-white/60 shadow-sm transition-transform duration-350 ease-[cubic-bezier(.22,.9,.39,1)] hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#e9dff6] max-w-md"
               aria-label={logo.alt}
             >
               {/* Colored logo with subtle desaturation and gentle lift on hover */}
