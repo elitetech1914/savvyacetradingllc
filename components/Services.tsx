@@ -8,14 +8,14 @@ const SERVICES = [
   { id: "marketing-promotion", title: "Marketing & Promotion", desc: "Marketing strategies tailored for books and authors.", items: ["Book Marketing Strategy", "SEO (Search Engine Optimization)", "Digital Marketing Campaigns", "Amazon PPC (Pay-Per-Click)", "Billboard Marketing", "Reviews Management (all platforms)"], icon: Megaphone },
   { id: "vr-simulation", title: "VR Simulation Services", desc: "Custom immersive simulations, training and interactive walkthroughs.", items: ["Custom VR Training Simulations", "VR Game Development", "3D Environment Design", "Architectural & Industrial Walkthroughs", "Interactive VR Experiences"], icon: RectangleGoggles },
   { id: "ai-agent-services", title: "AI Agent Services", desc: "Intelligent agents for support, outreach, research and automation.", items: ["Customer Support AI", "Lead generation, follow-ups & email outreach", "Research Agents", "Coding Assistants", "Data Agents", "Voice Agents"], icon: Bot },
-  { id: "app-development", title: "App Development Services", desc: "From concept to launch — cross-platform apps and backend integrations.", items: ["UI/UX Design", "Cross-platform App Development", "Backend & API Integration", "App Maintenance & Updates", "Custom Business App Solutions", "App Prototyping & Wireframing"], icon: Smartphone },
+  { id: "web/app-development", title: "Web/App Development Services", desc: "From concept to launch — cross-platform apps and backend integrations.", items: ["UI/UX Design", "Cross-platform App Development", "Backend & API Integration", "App Maintenance & Updates", "Custom Business App Solutions", "App Prototyping & Wireframing"], icon: Smartphone },
   { id: "game-development", title: "Game Development", desc: "2D & 3D games, engines, and player-first experiences.", items: ["2D & 3D Game Development", "Unity & Unreal Engine Projects", "Mobile Game Development", "Multiplayer Game Integration", "Game UI/UX Design"], icon: Gamepad },
   { id: "ui-ux-design", title: "UI/UX Design", desc: "Creating intuitive and engaging user experiences.", items: ["User Research", "Wireframing", "Prototyping", "User Testing", "Visual Design"], icon: Monitor }
 ];
 
 export default function ServicesSection() {
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 py-10 md:py-18 lg:py-26">
+    <section id="services" className="w-full max-w-7xl mx-auto px-6 py-10 md:py-18 lg:py-26">
       <div className="flex flex-col items-center text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-[#483953] mb-6 tracking-tight max-w-3xl">Services — What we build</h2>
         <p className="text-lg text-gray-600 mb-12 max-w-2xl">We match experienced teams and builders to your product needs. Choose a service below to learn more.</p>

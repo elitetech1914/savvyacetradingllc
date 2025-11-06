@@ -21,7 +21,7 @@ export default function PoweringSection({
     { src: "/Images/bookpridespublishing.png", alt: "bookpridespublishing" },
     { src: "/Images/webdesignexperts.png", alt: "webdesignexperts" },
     { src: "/Images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
-    { src: "/Images/logo-4.png", alt: "Customer 4" },
+    { src: "/Images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
   ],
 }: Props) {
   return (
@@ -52,7 +52,6 @@ export default function PoweringSection({
                   width={180}
                   height={64}
                   className="object-contain h-10 sm:h-14 transition-all duration-350 ease-[cubic-bezier(.22,.9,.39,1)] filter saturate-90 hover:saturate-100 hover:brightness-105 min-w-56"
-                  priority={idx < 2}
                 />
               </div>
             </a>

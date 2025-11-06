@@ -5,7 +5,7 @@ import { Quote, CheckCircle2 } from "lucide-react";
 
 export default function TestimonialsLightTheme() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white text-[#483953]">
+    <div id='reviews' className="min-h-screen flex items-center justify-center bg-white text-[#483953]">
       <section className="max-w-7xl sm:px-6 lg:px-8 sm:py-5 md:py-8 mx-auto pt-8 pr-4 pb-8 pl-4 w-full">
         <div className="flex items-center justify-between">
           <div className="space-y-1">
