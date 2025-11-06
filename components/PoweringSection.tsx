@@ -19,10 +19,10 @@ type Props = {
 export default function PoweringSection({
   title = "Powering",
   logos = [
-    { src: "/Images/bookpridespublishing.png", alt: "bookpridespublishing" },
-    { src: "/Images/webdesignexperts.png", alt: "webdesignexperts" },
-    { src: "/Images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
-    { src: "/Images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
+    { src: "/images/bookpridespublishing.png", alt: "bookpridespublishing" },
+    { src: "/images/webdesignexperts.png", alt: "webdesignexperts" },
+    { src: "/images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
+    { src: "/images/Venturebookpublishing.png", alt: "Venturebookpublishing" },
   ],
 }: Props) {
   return (
