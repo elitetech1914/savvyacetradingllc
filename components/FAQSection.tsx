@@ -62,12 +62,14 @@ export default function FAQSection() {
             </div>
 
             <button className="mt-8 inline-flex items-center justify-center rounded-full bg-white/60 backdrop-blur-md px-6 py-3 shadow-md text-[#6b4a71] font-medium border border-white">
+            <a href="#contact" >
               Contact Us
+            </a>
             </button>
 
             <div className="mt-12 text-sm text-[#a385a9]">
               <p>
-                Or email us at <span className="text-[#483953] font-medium">support@erstechnologies.com</span>
+                Or email us at <span className="text-[#483953] font-medium">support@erstechnologiesllc.com</span>
               </p>
             </div>
           </div>

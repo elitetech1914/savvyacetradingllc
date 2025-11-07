@@ -177,6 +177,7 @@ export default function Pricing() {
 
                 {/* CTA Button - This stays at the bottom */}
                 <div className="mt-auto pt-4">
+                <a href="#contact">
                   <button
                     className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
                       plan.popular
@@ -184,8 +185,10 @@ export default function Pricing() {
                         : 'bg-gray-900 text-white hover:bg-gray-800'
                     }`}
                   >
+                    
                     {plan.cta}
                   </button>
+                </a>
                 </div>
               </div>
             </div>

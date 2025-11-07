@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -41,16 +42,12 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-3 mt-3">
-              <a href="#" aria-label="Twitter" className="p-2 rounded-md hover:bg-white/60 transition">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0016 3a4.48 4.48 0 00-4.47 4.47c0 .35.04.69.11 1.02A12.8 12.8 0 013 4s-4 9 5 13a13 13 0 01-8 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" fill="#7c5aa0" />
-                </svg>
+              <a href="https://www.facebook.com/erstechnologiesllc/" aria-label="Facebook" className="p-2 rounded-md transition">
+                <Facebook size={17} className="text-[#7c5aa0]"/>
               </a>
 
-              <a href="#" aria-label="LinkedIn" className="p-2 rounded-md hover:bg-white/60 transition">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                  <path d="M4.98 3.5a2.5 2.5 0 11.03 5 2.5 2.5 0 01-.03-5zM3 9h4v12H3zM9 9h3.6v1.7h.05c.5-.95 1.72-1.95 3.54-1.95C20 8.75 21 11 21 14.6V21h-4v-6.2c0-1.47-.03-3.37-2.06-3.37-2.06 0-2.38 1.6-2.38 3.27V21H9z" fill="#7c5aa0" />
-                </svg>
+              <a href="https://www.instagram.com/erstechnologiesllc/" aria-label="Instagram" className="p-2 rounded-md transition">
+              <Instagram size={17} className="text-[#7c5aa0]"/>
               </a>
             </div>
           </div>
@@ -106,8 +103,7 @@ export default function Footer() {
             <div className="mt-6 text-xs text-[#b39bc0]">
               <p>© {new Date().getFullYear()} ERS Technologies. All rights reserved.</p>
               <div className="flex gap-3 mt-2">
-                <Link href="#" className="hover:text-[#5a3760]">Privacy</Link>
-                <Link href="#" className="hover:text-[#5a3760]">Terms</Link>
+                <Link href="/privacy-policy" className="hover:text-[#5a3760]">Privacy</Link>
               </div>
             </div>
           </div>
