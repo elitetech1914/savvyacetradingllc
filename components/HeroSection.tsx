@@ -4,6 +4,7 @@ import Link from "next/link";
 import AuroraBackground from "@/components/AuroraBackground";
 import Header from "./Header";
 import InfiniteMarquee from "@/components/InfiniteMarquee";
+import { FlipWords } from "./ui/flip-words";
 
 const logos = [
   { src: '/images/adobe-illustrator.png', alt: 'adobe-illustrator', width: 100, height: 100 },
@@ -21,6 +22,7 @@ const logos = [
 
 
 const HeroSection = () => {
+  const words = ["dream", "vision", "idea", "goal", "ambition"];
   return (
     <section className="min-h-lvh">
       {/* Aurora background behind hero content */}
@@ -32,7 +34,7 @@ const HeroSection = () => {
         <Header />
         {/* Hero content */}
         <h1 className="max-md:text-5xl px-2 relative z-10 text-[#483953] tracking-tighter text-7xl font-medium max-w-3xl text-center mt-36">
-          Devs which make your dream a reality
+          Turn your <FlipWords className="text-[#483953]" words={words} />into a reality with us.
         </h1>
         <p className="relative max-md:text-lg z-10 px-2 text-[#8b6fa0] text-2xl max-w-3xl text-center">
           Our mission is to empower businesses and individuals by harnessing the full
