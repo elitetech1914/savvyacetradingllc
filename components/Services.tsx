@@ -27,7 +27,7 @@ export default function ServicesSection() {
             return (
               <article key={s.id} className="group shadow-inner relative rounded-2xl bg-white/95 p-6 transition-shadow duration-300 hover:shadow-lg hover:scale-[1.01] transform will-change-transform w-full max-w-[22.5rem]" aria-label={s.title}>
                 <div className="flex flex-col items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-purple-50 to-indigo-50 text-indigo-600 shadow-sm">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-purple-50 to-indigo-50 text-[#8a67d8] shadow-sm">
                     <Icon className="h-6 w-6" aria-hidden />
                   </div>
 

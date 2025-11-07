@@ -49,7 +49,7 @@ export default function FAQSection() {
           about us
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
           {/* Left: Contact card */}
           <div className="flex flex-col items-start justify-end h-full">
             <div className="flex items-center gap-4">
@@ -119,7 +119,6 @@ export default function FAQSection() {
           </div>
         </div>
       </div>
-
       {/* Accessibility: respect prefers-reduced-motion */}
       <style jsx global>{`
         @media (prefers-reduced-motion: reduce) {
@@ -129,6 +128,7 @@ export default function FAQSection() {
           }
         }
       `}</style>
+     
     </section>
   );
 }

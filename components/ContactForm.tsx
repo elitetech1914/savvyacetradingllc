@@ -169,8 +169,8 @@ export default function Example() {
               <button
                 type="button"
                 onClick={() => setIsChecked(!isChecked)}
-                className={`relative inline-flex w-11 h-6 shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 ${
-                  isChecked ? 'bg-indigo-600' : 'bg-gray-200'
+                className={`relative inline-flex w-11 h-6 shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#af8aff] focus:ring-offset-2 ${
+                  isChecked ? 'bg-[#af8aff]' : 'bg-gray-200'
                 }`}
               >
                 <span
@@ -191,12 +191,8 @@ export default function Example() {
             </div>
             <label htmlFor="agree-to-policies" className="text-sm/6 text-gray-600 flex-1">
               By selecting this, you agree to our{' '}
-              <a href="#" className="font-semibold whitespace-nowrap text-indigo-600 hover:text-indigo-500 transition-colors duration-200">
+              <a href="/privacy-policy" className="font-semibold whitespace-nowrap text-[#8a67d8] hover:text-[#cb94eb]transition-colors duration-200">
                 privacy policy
-              </a>
-              {' '}and{' '}
-              <a href="#" className="font-semibold whitespace-nowrap text-indigo-600 hover:text-indigo-500 transition-colors duration-200">
-                terms of service
               </a>
               .
             </label>
@@ -208,14 +204,10 @@ export default function Example() {
           <button
             type="submit"
             disabled={!isChecked}
-            className="group relative block w-full rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-4 text-center text-lg font-semibold text-white shadow-lg transition-all duration-200 
-                      hover:from-indigo-500 hover:to-purple-500 hover:shadow-xl hover:scale-[1.02] 
-                      focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 
-                      disabled:from-gray-400 disabled:to-gray-500 disabled:cursor-not-allowed disabled:shadow-none disabled:scale-100
-                      overflow-hidden"
+            className="group relative block w-full rounded-lg bg-gradient-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] disabled:from-gray-500 disabled:via-gray-400 disabled:to-gray-500 text-white px-6 py-4 text-center text-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#8a67d8] focus:ring-offset-2 disabled:cursor-not-allowed disabled:shadow-none disabled:scale-100 overflow-hidden"
           >
             <span className="relative z-10">Let&apos;s talk</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
           </button>
         </div>
       </form>

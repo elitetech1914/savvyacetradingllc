@@ -22,11 +22,11 @@ const logos = [
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="min-h-lvh">
       {/* Aurora background behind hero content */}
       <AuroraBackground />
       <div
-        className="relative min-h-[700px] m-5 pt-5 rounded-4xl flex flex-col items-center justify-center gap-6 overflow-hidden bg-white"
+        className="relative min-h-[95lvh] m-5 pt-5 rounded-4xl flex flex-col items-center justify-center gap-6 overflow-hidden bg-white"
         style={{ boxShadow: "inset 0px 2px 4px rgba(0, 0, 0, 0.1)" }}
       >
         <Header />

@@ -103,7 +103,7 @@ export default function Footer() {
             <div className="mt-6 text-xs text-[#b39bc0]">
               <p>© {new Date().getFullYear()} ERS Technologies. All rights reserved.</p>
               <div className="flex gap-3 mt-2">
-                <Link href="/privacy-policy" className="hover:text-[#5a3760]">Privacy</Link>
+                <Link href="/privacy-policy" className="hover:text-[#5a3760]">Privacy policy</Link>
               </div>
             </div>
           </div>

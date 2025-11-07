@@ -43,7 +43,7 @@ export default function Pricing() {
         'Performance optimization'
       ],
       cta: 'Start Project',
-      color: 'from-purple-500 to-pink-500'
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
     },
     {
       name: 'Enterprise',
@@ -126,7 +126,7 @@ export default function Pricing() {
             >
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-linear-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-medium whitespace-nowrap">
+                  <span className="bg-linear-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] text-white px-4 py-1 rounded-full text-sm font-medium whitespace-nowrap">
                     Most Popular
                   </span>
                 </div>
@@ -181,7 +181,7 @@ export default function Pricing() {
                   <button
                     className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
                       plan.popular
-                        ? 'bg-linear-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 shadow-lg hover:shadow-xl'
+                        ? 'bg-linear-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] text-white hover:from-[#7f7ed4] hover:via-[#7759b9] hover:to-[#ab7dc6] shadow-lg hover:shadow-xl'
                         : 'bg-gray-900 text-white hover:bg-gray-800'
                     }`}
                   >
@@ -212,11 +212,7 @@ export default function Pricing() {
         {/* FAQ/Additional Info */}
         <div className="max-w-3xl mx-auto mt-12 text-center">
           <p className="text-[#483953] text-sm">
-            Need a custom solution?{' '}
-            <a href="#contact" className="text-purple-600 hover:text-purple-700 font-medium underline">
-              Contact us
-            </a>{' '}
-            for a tailored quote.
+            Need a custom solution? Contact us for a tailored quote.
           </p>
         </div>
       </div>
