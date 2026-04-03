@@ -9,29 +9,29 @@ type FAQItem = {
 
 const faqs: FAQItem[] = [
   {
-    question: "How secure is ERS Technologies?",
+    question: "What services do you offer?",
     answer:
-      "ERS Technologies stores data encrypted at rest and in transit, and we follow industry best practices for access control and auditing.",
+      "We provide writing and editing, design and creative work, publishing support, book marketing, AI agent development, web and app development, VR simulations, game development, and UI/UX design.",
   },
   {
-    question: "Can I integrate my existing tools?",
+    question: "Can I combine services?",
     answer:
-      "Yes — ERS Technologies offers a growing list of integrations and a public API so you can connect your current stack quickly.",
+      "Yes. Many clients work with us across multiple areas, such as pairing book publishing with marketing, or combining UI/UX design with app development and backend integration.",
   },
   {
-    question: "How quickly can I see results?",
+    question: "Who do you work with?",
     answer:
-      "Most customers start seeing measurable improvements within days. Exact timing depends on your dataset and workflows.",
+      "Yes. We support individual authors, growing businesses, startups, and organizations that need creative, technical, or product development help.",
   },
   {
-    question: "Do you offer customer support?",
+    question: "How long do projects take?",
     answer:
-      "We provide email and chat support during business hours, plus priority support plans for enterprise customers.",
+      "Timelines depend on the service and scope. Smaller design or writing projects can move quickly, while custom apps, AI agents, VR builds, and game development projects usually follow a larger delivery plan.",
   },
   {
-    question: "Is there a free trial available?",
+    question: "Do you offer custom quotes?",
     answer:
-      "Yes — try ERS Technologies free for 14 days. No credit card required to get started.",
+      "Yes. If your project needs a tailored mix of services, we can review your goals and provide a custom quote based on scope, features, and delivery requirements.",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function FAQSection() {
               <div>
                 <p className="text-sm text-[#483953] font-semibold">Have more questions?</p>
                 <p className="text-sm text-[#8a6d8f] max-w-xs">
-                  Contact our support team with any questions you may have.
+                  Contact our team to talk through your project, services, and next steps.
                 </p>
               </div>
             </div>

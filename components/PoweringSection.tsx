@@ -22,7 +22,7 @@ export default function PoweringSection({
     { src: "/images/bookpridespublishing.png", alt: "bookpridespublishing", href: "https://bookpridespublishing.com" },
     { src: "/images/webdesignexperts.png", alt: "webdesignexperts", href: "https://webdesignexperts.com" },
     { src: "/images/Venturebookpublishing.png", alt: "Venturebookpublishing", href: "https://venturebookpublisher.com" },
-    { src: "/images/Venturebookpublishing.png", alt: "Venturebookpublishing", href: "https://venturebookpublisher.com" },
+    { src: "/images/appdesignlogoblack.png", alt: "appdesignexperts", href: "https://appdesignsexperts.com" },
   ],
 }: Props) {
   return (

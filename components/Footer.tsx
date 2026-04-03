@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Facebook, Instagram } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -29,17 +30,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#7c5aa0] flex items-center justify-center text-white font-bold">F</div>
-              <div>
-                <p className="text-lg font-semibold text-[#5a3760]">ERS Technologies</p>
-                <p className="text-sm text-[#8a6d8f]">Data-driven automation for teams</p>
+            
+              <div className="object-contain -ml-6">
+                <Image src="/images/logo.png" alt="ERS Technologies Logo" width={200} height={200} />
               </div>
-            </div>
+            
 
             <p className="text-sm text-[#a385a9] max-w-sm">
               Built with privacy and performance in mind. Reach out to learn how ERS Technologies can help your team move faster.
             </p>
+
+            <address className="not-italic text-sm text-[#8a6d8f] max-w-sm leading-6">
+              3127 E HEATHEROCK CIR
+              <br />
+              SUGAR LAND, TX 77479-1907
+            </address>
 
             <div className="flex gap-3 mt-3">
               <a href="https://www.facebook.com/erstechnologiesllc/" aria-label="Facebook" className="p-2 rounded-md transition">
@@ -102,8 +107,12 @@ export default function Footer() {
 
             <div className="mt-6 text-xs text-[#b39bc0]">
               <p>© {new Date().getFullYear()} ERS Technologies. All rights reserved.</p>
-              <div className="flex gap-3 mt-2">
+              <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
                 <Link href="/privacy-policy" className="hover:text-[#5a3760]">Privacy policy</Link>
+                <Link href="/sms-privacy-policy" className="hover:text-[#5a3760]">SMS privacy policy</Link>
+                <Link href="/refund-policy" className="hover:text-[#5a3760]">Refund policy</Link>
+                <Link href="/dispute-chargeback-policy" className="hover:text-[#5a3760]">Dispute / Chargeback policy</Link>
+                <Link href="/terms-and-conditions" className="hover:text-[#5a3760]">Terms &amp; Conditions</Link>
               </div>
             </div>
           </div>

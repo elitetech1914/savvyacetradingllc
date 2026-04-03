@@ -194,6 +194,10 @@ export default function Example() {
               <a href="/privacy-policy" className="font-semibold whitespace-nowrap text-[#8a67d8] hover:text-[#cb94eb]transition-colors duration-200">
                 privacy policy
               </a>
+              {' '}and{' '}
+              <a href="/terms-and-conditions" className="font-semibold whitespace-nowrap text-[#8a67d8] hover:text-[#cb94eb] transition-colors duration-200">
+                terms &amp; conditions
+              </a>
               .
             </label>
           </div>

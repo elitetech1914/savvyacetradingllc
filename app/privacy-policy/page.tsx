@@ -1,10 +1,11 @@
-import PrivacyPolicy from '@/components/PrivacyPolicy'
-import React from 'react'
+import type { Metadata } from "next";
+import PrivacyPolicy from "@/components/PrivacyPolicy";
 
-const page = () => {
-  return (
-    <PrivacyPolicy />
-  )
+export const metadata: Metadata = {
+  title: "Privacy Policy | ERS Technologies",
+  description: "Read the ERS Technologies privacy policy.",
+};
+
+export default function PrivacyPolicyPage() {
+  return <PrivacyPolicy />;
 }
-
-export default page

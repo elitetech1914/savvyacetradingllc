@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Rocket, Menu, X } from "lucide-react";
+import {Menu} from "lucide-react";
 
 // Adjust these imports to match where your shadcn UI components live
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,7 @@ import {
   SheetContent,
   SheetClose,
 } from "@/components/ui/sheet";
+import Image from "next/image";
 
 const navItems = [
   { href: "#services", label: "Services" },
@@ -25,9 +26,14 @@ export default function Header() {
     <header className="absolute top-8 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl z-50">
       <div className="flex items-center justify-between">
         {/* Logo / Brand */}
-        <div className="flex items-center gap-3">
-          <Rocket className="text-[#9F80DA]" />
-          <h1 className="text-[#573e69] font-bold">ERS Technologies</h1>
+        <div className="">
+          <Image
+          src={"/images/logo.png"}
+          width={200}
+          height={200}
+          alt="ERS Technologies Logo"
+          className="object-contain"
+          />
         </div>
 
         {/* Desktop nav */}
@@ -60,9 +66,14 @@ export default function Header() {
             <SheetContent side="right" className="w-[90vw] sm:w-[420px] p-5">
               <DialogTitle className="sr-only">Menu</DialogTitle>
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <Rocket className="text-[#9F80DA]" />
-                  <h1 className="text-[#573e69] font-bold">ERS Technologies</h1>
+                <div className="">
+                  <Image
+                  src={"/images/logo.png"}
+                  width={200}
+                  height={200}
+                  alt="ERS Technologies Logo"
+                  className="object-contain"
+                  />
                 </div>
                 <SheetClose asChild>
                   <Button variant="ghost" aria-label="Close menu">

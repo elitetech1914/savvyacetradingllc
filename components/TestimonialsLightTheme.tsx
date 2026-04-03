@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Quote, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 export default function TestimonialsLightTheme() {
   return (
@@ -30,7 +31,7 @@ export default function TestimonialsLightTheme() {
               {/* Card: Ava Thompson */}
               <article className="shrink-0 w-[280px] sm:w-[360px] md:w-[420px] rounded-2xl border border-gray-200 bg-white p-5 shadow-inner">
                 <div className="flex items-center gap-3">
-                  <img src="https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/e0bbf4a4-5f58-4644-bea6-85d2fef73d4a_320w.jpg" alt="Ava Thompson" className="w-9 h-9 object-cover rounded-full" />
+                  <Image src="/images/ava.png" width={50} height={50} alt="Ava Thompson" className="w-9 h-9 object-cover rounded-full" />
                   <div>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium text-[#483953]">Ava Thompson</span>
@@ -46,7 +47,7 @@ export default function TestimonialsLightTheme() {
               {/* Card: Noah Patel */}
               <article className="shrink-0 w-[280px] sm:w-[360px] md:w-[420px] rounded-2xl border border-gray-200 bg-white p-5 shadow-inner">
                 <div className="flex items-center gap-3">
-                  <img src="https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/27a2c31e-38f3-479f-a831-858e91b9bd84_320w.jpg" alt="Noah Patel" className="w-9 h-9 object-cover rounded-full" />
+                  <Image src="/images/noah.png" width={50} height={50} alt="Noah Patel" className="w-9 h-9 object-cover rounded-full" />
                   <div>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium text-[#483953]">Noah Patel</span>
@@ -62,7 +63,7 @@ export default function TestimonialsLightTheme() {
               {/* Card: Maya Kim */}
               <article className="shrink-0 w-[280px] sm:w-[360px] md:w-[420px] rounded-2xl border border-gray-200 bg-white p-5 shadow-inner">
                 <div className="flex items-center gap-3">
-                  <img src="https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/86a541ae-1b5d-4597-8538-e55c0858f4ff_320w.jpg" alt="Maya Kim" className="w-9 h-9 object-cover rounded-full" />
+                  <Image src="/images/maya.png" width={50} height={50} alt="Maya Kim" className="w-9 h-9 object-cover rounded-full" />
                   <div>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium text-[#483953]">Maya Kim</span>
@@ -78,7 +79,7 @@ export default function TestimonialsLightTheme() {
               {/* Card: Ethan Garcia */}
               <article className="shrink-0 w-[280px] sm:w-[360px] md:w-[420px] rounded-2xl border border-gray-200 bg-white p-5 shadow-inner">
                 <div className="flex items-center gap-3">
-                  <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=120&h=120&fit=crop&crop=faces" alt="Ethan Garcia" className="w-9 h-9 rounded-full object-cover" />
+                  <Image src="/images/ethan.png" alt="Ethan Garcia" width={50} height={50} className="w-9 h-9 rounded-full object-cover" />
                   <div>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium text-[#483953]">Ethan Garcia</span>
@@ -94,7 +95,7 @@ export default function TestimonialsLightTheme() {
               {/* Duplicate items for looping (keep as many as needed) */}
               <article className="shrink-0 w-[280px] sm:w-[360px] md:w-[420px] rounded-2xl border border-gray-200 bg-white p-5 shadow-inner">
                 <div className="flex items-center gap-3">
-                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=120&h=120&fit=crop&crop=faces" alt="Ava Thompson" className="w-9 h-9 rounded-full object-cover" />
+                  <Image src="/images/ava.png" alt="Ava Thompson" width={50} height={50} className="w-9 h-9 rounded-full object-cover" />
                   <div>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium text-[#483953]">Ava Thompson</span>
@@ -118,7 +119,7 @@ export default function TestimonialsLightTheme() {
 
               <article className="shrink-0 w-[280px] sm:w-[360px] md:w-[420px] bg-white border border-gray-200 rounded-2xl p-5 shadow-inner">
                 <div className="flex items-center gap-3">
-                  <img src="https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/358aaa92-ba50-4778-b2a2-7c8f7310e44c_320w.jpg" alt="Priya Singh" className="w-9 h-9 object-cover rounded-full" />
+                  <Image src="/images/priya.png" width={50} height={50} alt="Priya Singh" className="w-9 h-9 object-cover rounded-full" />
                   <div>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium text-[#483953]">Priya Singh</span>
@@ -133,7 +134,7 @@ export default function TestimonialsLightTheme() {
 
               <article className="shrink-0 w-[280px] sm:w-[360px] md:w-[420px] bg-white border border-gray-200 rounded-2xl p-5 shadow-inner">
                 <div className="flex items-center gap-3">
-                  <img src="https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/b6d79211-32f1-430e-96b3-9b4d857c1482_320w.jpg" alt="Leo Martin" className="w-9 h-9 object-cover rounded-full" />
+                  <Image src="/images/leo.png" width={50} height={50} alt="Leo Martin" className="w-9 h-9 object-cover rounded-full" />
                   <div>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium text-[#483953]">Leo Martin</span>
@@ -148,7 +149,7 @@ export default function TestimonialsLightTheme() {
 
               <article className="shrink-0 w-[280px] sm:w-[360px] md:w-[420px] bg-white border border-gray-200 rounded-2xl p-5 shadow-inner">
                 <div className="flex items-center gap-3">
-                  <img src="https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/ec17a2e2-e4f4-4164-b631-f074e640a0c1_320w.jpg" alt="Sofia Alvarez" className="w-9 h-9 object-cover rounded-full" />
+                  <Image src="/images/sofia.png" width={50} height={50} alt="Sofia Alvarez" className="w-9 h-9 object-cover rounded-full" />
                   <div>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium text-[#483953]">Sofia Alvarez</span>
@@ -163,7 +164,7 @@ export default function TestimonialsLightTheme() {
 
               <article className="shrink-0 w-[280px] sm:w-[360px] md:w-[420px] rounded-2xl border border-gray-200 bg-white p-5 shadow-inner">
                 <div className="flex items-center gap-3">
-                  <img src="https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/c0aab170-b3d3-4816-9435-0ac1e1d853a3_320w.jpg" alt="Jackson Lee" className="w-9 h-9 rounded-full object-cover" />
+                  <Image src="/images/jackson.png" width={50} height={50} alt="Jackson Lee" className="w-9 h-9 rounded-full object-cover" />
                   <div>
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium text-[#483953]">Jackson Lee</span>
