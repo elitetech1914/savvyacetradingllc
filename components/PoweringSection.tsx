@@ -21,7 +21,7 @@ export default function PoweringSection({
   logos = [
     { src: "/images/bookpridespublishing.png", alt: "bookpridespublishing", href: "https://bookpridespublishing.com" },
     { src: "/images/webdesignexperts.png", alt: "webdesignexperts", href: "https://webdesignexperts.com" },
-    { src: "/images/Venturebookpublishing.png", alt: "Venturebookpublishing", href: "https://venturebookpublisher.com" },
+    { src: "/images/ecomscaling.png?v=2", alt: "Ecom Scaling Agency", href: "https://www.ecomscalingagency.com/" },
     { src: "/images/appdesignlogoblack.png", alt: "appdesignexperts", href: "https://appdesignsexperts.com" },
   ],
 }: Props) {
