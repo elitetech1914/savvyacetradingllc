@@ -3,71 +3,540 @@
 import { useState } from 'react'
 import { Check, Star, Zap, Users, Globe, Shield } from 'lucide-react'
 
-export default function Pricing() {
-  const [isAnnual, setIsAnnual] = useState(true)
-
-  const plans = [
+const servicePlans = {
+  'Writing & Editing': [
     {
       name: 'Starter',
-      description: 'Perfect for small businesses and startups',
-      monthlyPrice: 29,
+      description: 'For short-form content and light editing',
       annualPrice: 24,
       popular: false,
       icon: Zap,
       features: [
-        'Up to 5 pages website',
-        'Basic SEO optimization',
-        'Contact form',
-        'Mobile responsive',
-        '1 month support',
-        'Basic analytics'
+        'Short article or blog support',
+        'Proofreading and grammar polish',
+        'Basic formatting cleanup',
+        'One revision round',
+        'Email support'
       ],
       cta: 'Get Started',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       name: 'Professional',
-      description: 'Ideal for growing businesses',
-      monthlyPrice: 79,
+      description: 'For authors and businesses needing steady content',
       annualPrice: 65,
       popular: true,
       icon: Users,
       features: [
-        'Up to 15 pages website',
-        'Advanced SEO optimization',
-        'E-commerce functionality',
-        'CMS integration',
-        '6 months support',
-        'Advanced analytics',
-        'Social media integration',
-        'Performance optimization'
+        'Ghostwriting assistance',
+        'Copywriting and editing',
+        'Content structure review',
+        'SEO-friendly blog writing',
+        'Three revision rounds',
+        'Priority support'
       ],
       cta: 'Start Project',
       color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
     },
     {
       name: 'Enterprise',
-      description: 'For large-scale businesses and organizations',
-      monthlyPrice: 199,
+      description: 'For books, campaigns, and large content needs',
       annualPrice: 165,
       popular: false,
       icon: Globe,
       features: [
-        'Unlimited pages website',
-        'Enterprise SEO strategy',
-        'Custom web applications',
-        'API integrations',
-        '12 months support',
+        'Long-form manuscript support',
+        'Dedicated editorial workflow',
+        'Advanced proofreading and formatting',
+        'Publishing-ready document cleanup',
+        'Custom content calendar',
+        'Dedicated account manager'
+      ],
+      cta: 'Contact Sales',
+      color: 'from-orange-500 to-red-500'
+    }
+  ],
+  'Design & Creative': [
+    {
+      name: 'Starter',
+      description: 'For simple creative assets',
+      annualPrice: 39,
+      popular: false,
+      icon: Zap,
+      features: [
+        'One basic design asset',
+        'Simple visual direction',
+        'Source-ready export files',
+        'One revision round',
+        'Email support'
+      ],
+      cta: 'Get Started',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      name: 'Professional',
+      description: 'For polished brand and book visuals',
+      annualPrice: 95,
+      popular: true,
+      icon: Users,
+      features: [
+        'Book cover or creative package',
+        'Illustration direction',
+        'Merchandise design support',
+        'Three revision rounds',
+        'Print and web exports',
+        'Priority support'
+      ],
+      cta: 'Start Project',
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+    },
+    {
+      name: 'Enterprise',
+      description: 'For full creative systems and campaigns',
+      annualPrice: 225,
+      popular: false,
+      icon: Globe,
+      features: [
+        'Multi-asset creative system',
+        'Advanced illustration package',
+        'Brand consistency review',
+        'Campaign-ready deliverables',
+        'Dedicated designer coordination',
+        'Priority revisions'
+      ],
+      cta: 'Contact Sales',
+      color: 'from-orange-500 to-red-500'
+    }
+  ],
+  'Publishing & Distribution': [
+    {
+      name: 'Starter',
+      description: 'For early publishing setup',
+      annualPrice: 49,
+      popular: false,
+      icon: Zap,
+      features: [
+        'Publishing readiness review',
+        'Basic formatting guidance',
+        'Copyright checklist',
+        'Account setup guidance',
+        'Email support'
+      ],
+      cta: 'Get Started',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      name: 'Professional',
+      description: 'For authors preparing to launch',
+      annualPrice: 125,
+      popular: true,
+      icon: Users,
+      features: [
+        'Amazon seller setup support',
+        'Author Central guidance',
+        'Print and distribution coordination',
+        'E-commerce integration planning',
+        'Launch checklist',
+        'Priority support'
+      ],
+      cta: 'Start Project',
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+    },
+    {
+      name: 'Enterprise',
+      description: 'For full publishing operations',
+      annualPrice: 275,
+      popular: false,
+      icon: Globe,
+      features: [
+        'End-to-end publishing support',
+        'Printing press coordination',
+        'Distribution workflow setup',
+        'Commerce and author platform support',
+        'Dedicated launch manager',
+        'Custom reporting'
+      ],
+      cta: 'Contact Sales',
+      color: 'from-orange-500 to-red-500'
+    }
+  ],
+  'Marketing & Promotion': [
+    {
+      name: 'Starter',
+      description: 'For basic visibility and launch support',
+      annualPrice: 79,
+      popular: false,
+      icon: Zap,
+      features: [
+        'Basic SEO recommendations',
+        'Campaign planning checklist',
+        'Review platform guidance',
+        'One promotion channel',
+        'Email support'
+      ],
+      cta: 'Get Started',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      name: 'Professional',
+      description: 'For active campaign growth',
+      annualPrice: 199,
+      popular: true,
+      icon: Users,
+      features: [
+        'Book marketing strategy',
+        'Digital campaign setup',
+        'Amazon PPC planning',
+        'SEO optimization',
+        'Reviews management support',
+        'Monthly performance notes'
+      ],
+      cta: 'Start Project',
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+    },
+    {
+      name: 'Enterprise',
+      description: 'For multi-channel promotional campaigns',
+      annualPrice: 499,
+      popular: false,
+      icon: Globe,
+      features: [
+        'Full marketing campaign plan',
+        'Multi-channel ad coordination',
+        'Billboard marketing support',
+        'Advanced SEO and PPC strategy',
+        'Dedicated campaign manager',
+        'Custom reporting dashboard'
+      ],
+      cta: 'Contact Sales',
+      color: 'from-orange-500 to-red-500'
+    }
+  ],
+  'VR Simulation Services': [
+    {
+      name: 'Starter',
+      description: 'For simple VR proof-of-concepts',
+      annualPrice: 299,
+      popular: false,
+      icon: Zap,
+      features: [
+        'VR concept consultation',
+        'Basic interaction prototype',
+        'Single environment scope',
+        'Device readiness guidance',
+        'Email support'
+      ],
+      cta: 'Get Started',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      name: 'Professional',
+      description: 'For immersive training and walkthroughs',
+      annualPrice: 899,
+      popular: true,
+      icon: Users,
+      features: [
+        'Custom VR training simulation',
+        '3D environment design',
+        'Interactive walkthrough flow',
+        'Scenario scripting',
+        'Testing and optimization',
+        'Priority support'
+      ],
+      cta: 'Start Project',
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+    },
+    {
+      name: 'Enterprise',
+      description: 'For advanced VR programs',
+      annualPrice: 1999,
+      popular: false,
+      icon: Globe,
+      features: [
+        'Multi-scene VR experience',
+        'Industrial walkthrough support',
+        'Advanced interaction systems',
+        'Team review milestones',
+        'Deployment coordination',
+        'Dedicated project manager'
+      ],
+      cta: 'Contact Sales',
+      color: 'from-orange-500 to-red-500'
+    }
+  ],
+  'AI Agent Services': [
+    {
+      name: 'Starter',
+      description: 'For a focused AI assistant workflow',
+      annualPrice: 149,
+      popular: false,
+      icon: Zap,
+      features: [
+        'Single agent planning',
+        'Basic workflow automation',
+        'Knowledge base setup guidance',
+        'Simple handoff flow',
+        'Email support'
+      ],
+      cta: 'Get Started',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      name: 'Professional',
+      description: 'For support, outreach, and research agents',
+      annualPrice: 399,
+      popular: true,
+      icon: Users,
+      features: [
+        'Customer support AI setup',
+        'Lead follow-up workflow',
+        'Research agent configuration',
+        'Data source integration planning',
+        'Testing and prompt refinement',
+        'Priority support'
+      ],
+      cta: 'Start Project',
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+    },
+    {
+      name: 'Enterprise',
+      description: 'For advanced automation systems',
+      annualPrice: 999,
+      popular: false,
+      icon: Globe,
+      features: [
+        'Multi-agent automation design',
+        'Voice agent planning',
+        'Data agent workflows',
+        'Custom business integrations',
+        'Monitoring recommendations',
+        'Dedicated automation lead'
+      ],
+      cta: 'Contact Sales',
+      color: 'from-orange-500 to-red-500'
+    }
+  ],
+
+
+  'Web Development': [
+    {
+      name: 'Starter',
+      description: 'For simple business websites and landing pages',
+      annualPrice: 49,
+      popular: false,
+      icon: Zap,
+      features: [
+        'Up to 5 page website',
+        'Responsive web layout',
+        'Contact form setup',
+        'Basic SEO structure',
+        'Performance-friendly build',
+        '1 month support'
+      ],
+      cta: 'Get Started',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      name: 'Professional',
+      description: 'For growing websites with richer functionality',
+      annualPrice: 129,
+      popular: true,
+      icon: Users,
+      features: [
+        'Up to 15 page website',
+        'CMS or blog setup',
+        'Advanced SEO optimization',
+        'E-commerce or booking flow',
+        'Analytics integration',
+        '6 months support'
+      ],
+      cta: 'Start Project',
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+    },
+    {
+      name: 'Enterprise',
+      description: 'For custom web platforms and enterprise sites',
+      annualPrice: 299,
+      popular: false,
+      icon: Globe,
+      features: [
+        'Unlimited page architecture',
+        'Custom web application features',
+        'API and CRM integrations',
+        'Security and performance review',
         'Custom analytics dashboard',
+        'Dedicated account manager'
+      ],
+      cta: 'Contact Sales',
+      color: 'from-orange-500 to-red-500'
+    }
+  ],
+
+
+  'App Development': [
+    {
+      name: 'Starter',
+      description: 'For app prototypes and early validation',
+      annualPrice: 149,
+      popular: false,
+      icon: Zap,
+      features: [
+        'App idea consultation',
+        'Core screen wireframes',
+        'Clickable prototype',
+        'Basic UI direction',
+        'Feature scope planning',
+        'Email support'
+      ],
+      cta: 'Get Started',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      name: 'Professional',
+      description: 'For production-ready mobile app builds',
+      annualPrice: 499,
+      popular: true,
+      icon: Users,
+      features: [
+        'Cross-platform app development',
+        'UI/UX design for key flows',
+        'Backend and API integration',
+        'Authentication setup',
+        'Testing and app optimization',
+        '6 months support'
+      ],
+      cta: 'Start Project',
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+    },
+    {
+      name: 'Enterprise',
+      description: 'For complex apps and business systems',
+      annualPrice: 1299,
+      popular: false,
+      icon: Globe,
+      features: [
+        'Custom business app solution',
+        'Advanced backend architecture',
+        'Admin dashboard or portal',
+        'Third-party integrations',
+        'App maintenance planning',
         'Dedicated account manager',
-        'Priority support',
-        'Custom training sessions',
-        'Security audit'
+        'Priority support'
+      ],
+      cta: 'Contact Sales',
+      color: 'from-orange-500 to-red-500'
+    }
+  ],
+  'Game Development': [
+    {
+      name: 'Starter',
+      description: 'For game concepts and prototypes',
+      annualPrice: 299,
+      popular: false,
+      icon: Zap,
+      features: [
+        'Game concept consultation',
+        'Simple 2D prototype',
+        'Core loop planning',
+        'Basic UI direction',
+        'Email support'
+      ],
+      cta: 'Get Started',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      name: 'Professional',
+      description: 'For playable 2D or 3D game builds',
+      annualPrice: 899,
+      popular: true,
+      icon: Users,
+      features: [
+        'Unity or Unreal project setup',
+        'Playable prototype build',
+        'Game UI/UX design',
+        'Mobile game planning',
+        'Testing and iteration',
+        'Priority support'
+      ],
+      cta: 'Start Project',
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+    },
+    {
+      name: 'Enterprise',
+      description: 'For production-ready game experiences',
+      annualPrice: 2499,
+      popular: false,
+      icon: Globe,
+      features: [
+        'Full game development support',
+        'Multiplayer integration planning',
+        'Advanced gameplay systems',
+        'Release readiness support',
+        'Dedicated production workflow',
+        'Custom milestones'
+      ],
+      cta: 'Contact Sales',
+      color: 'from-orange-500 to-red-500'
+    }
+  ],
+  'UI/UX Design': [
+    {
+      name: 'Starter',
+      description: 'For focused interface improvements',
+      annualPrice: 49,
+      popular: false,
+      icon: Zap,
+      features: [
+        'Single-page UI review',
+        'Basic wireframe direction',
+        'Visual polish recommendations',
+        'One revision round',
+        'Email support'
+      ],
+      cta: 'Get Started',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      name: 'Professional',
+      description: 'For product screens and prototypes',
+      annualPrice: 149,
+      popular: true,
+      icon: Users,
+      features: [
+        'User research notes',
+        'Wireframing and visual design',
+        'Clickable prototype support',
+        'User testing recommendations',
+        'Design handoff assets',
+        'Priority support'
+      ],
+      cta: 'Start Project',
+      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+    },
+    {
+      name: 'Enterprise',
+      description: 'For full product design systems',
+      annualPrice: 399,
+      popular: false,
+      icon: Globe,
+      features: [
+        'Full product UX strategy',
+        'Multi-screen design system',
+        'Advanced prototyping',
+        'Design QA workflow',
+        'Stakeholder review support',
+        'Dedicated design lead'
       ],
       cta: 'Contact Sales',
       color: 'from-orange-500 to-red-500'
     }
   ]
+}
+
+export default function Pricing() {
+  const services = Object.keys(servicePlans) as Array<keyof typeof servicePlans>
+  const [activeService, setActiveService] = useState<keyof typeof servicePlans>('Writing & Editing')
+  const plans = servicePlans[activeService]
 
   const savings = [
     { text: 'No hidden fees', icon: Shield },
@@ -87,29 +556,31 @@ export default function Pricing() {
             Choose the perfect plan for your business. All plans include our core features with no surprises.
           </p>
 
-          {/* Toggle Switch */}
-          <div className="flex items-center justify-center gap-4 mb-2">
-            <span className={`text-sm font-medium ${!isAnnual ? 'text-[#483953]' : 'text-gray-500'}`}>
-              Monthly
-            </span>
-            <button
-              onClick={() => setIsAnnual(!isAnnual)}
-              className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
-            >
-              <span
-                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
-                  isAnnual ? 'translate-x-6' : 'translate-x-1'
-                }`}
-              />
-            </button>
-            <div className="flex items-center gap-2">
-              <span className={`text-sm font-medium ${isAnnual ? 'text-[#483953]' : 'text-gray-500'}`}>
-                Annual
-              </span>
-              <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-medium">
-                Save 20%
-              </span>
-            </div>
+          <div
+            role="tablist"
+            aria-label="Services"
+            className="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-2"
+          >
+            {services.map((service) => {
+              const isActive = activeService === service
+
+              return (
+                <button
+                  key={service}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => setActiveService(service)}
+                  className={`rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 ${
+                    isActive
+                      ? 'border-[#8a67d8] bg-[#8a67d8] text-white shadow-md shadow-purple-200'
+                      : 'border-[#eadff0] bg-white text-[#7b597f] hover:border-[#cbb6dc] hover:text-[#483953]'
+                  }`}
+                >
+                  {service}
+                </button>
+              )
+            })}
           </div>
         </div>
 
@@ -147,20 +618,12 @@ export default function Pricing() {
                 <div className="text-center mb-6">
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-4xl font-bold text-[#483953]">
-                      ${isAnnual ? plan.annualPrice : plan.monthlyPrice}
+                      ${plan.annualPrice}
                     </span>
-                    <span className="text-[#483953]">/month</span>
                   </div>
-                  {isAnnual && (
-                    <p className="text-gray-500 text-sm mt-1">
-                      billed annually (${plan.annualPrice * 12})
-                    </p>
-                  )}
-                  {!isAnnual && (
-                    <p className="text-gray-500 text-sm mt-1">
-                      billed monthly
-                    </p>
-                  )}
+                  <p className="text-gray-500 text-sm mt-1">
+                    one-time solution payment
+                  </p>
                 </div>
 
                 {/* Features - This will grow and take available space */}
