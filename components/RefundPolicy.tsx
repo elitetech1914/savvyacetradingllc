@@ -7,6 +7,13 @@ const intro = [
 
 const sections = [
   {
+    title: "30-Day Refund Policy",
+    paragraphs: [
+      "ERS Technologies offers a 30-day refund review window from the original purchase date unless a different written agreement applies. Refund requests submitted within 30 days will be reviewed according to the service purchased, the project stage, approvals, revisions, production status, third-party costs, and the other terms in this Refund Policy.",
+      "Refund requests submitted after 30 days from the original purchase date are generally not eligible for refund review unless required by applicable law or expressly agreed in writing by ERS Technologies.",
+    ],
+  },
+  {
     title: "General Refund Review",
     paragraphs: [
       "Refund requests must be made promptly and are reviewed case by case. Early-stage requests made before revisions, approvals, production, or implementation are more likely to be eligible for review than requests made after work progresses.",

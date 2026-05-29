@@ -40,6 +40,13 @@ const sections = [
     ],
   },
   {
+    title: "No Sale or Sharing of User Data",
+    paragraphs: [
+      "ERS Technologies does not sell collected user data. We also do not share collected user data with third parties for their independent marketing, advertising, or promotional use.",
+      "Where necessary to operate our website, process payments, communicate with clients, deliver services, maintain security, or comply with legal obligations, we may use trusted service providers that process information only on our behalf and according to applicable privacy and confidentiality requirements.",
+    ],
+  },
+  {
     title: "Log Files",
     paragraphs: [
       "Like many websites, ERS Technologies uses standard log files and analytics records. These may include IP addresses, browser type, internet service provider, date and time stamps, referring and exit pages, device details, and click or session information.",

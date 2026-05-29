@@ -5,6 +5,13 @@ import Link from "next/link";
 import { Facebook, Instagram } from "lucide-react";
 import Image from "next/image";
 
+const paymentCards = [
+  { src: "/card-images/visa-card.svg", alt: "Visa" },
+  { src: "/card-images/master-card.svg", alt: "Mastercard" },
+  { src: "/card-images/discover-card.svg", alt: "Discover" },
+  { src: "/card-images/amex-card.svg", alt: "American Express" },
+];
+
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -45,6 +52,21 @@ export default function Footer() {
               <br />
               SUGAR LAND, TX 77479-1907
             </address>
+
+            <h4 className="text-sm font-semibold text-[#5a3760] " >We accept</h4>
+
+            <div className="flex items-center gap-2 " aria-label="Accepted payment cards">
+              {paymentCards.map((card) => (
+                <Image
+                  key={card.src}
+                  src={card.src}
+                  alt={card.alt}
+                  width={68}
+                  height={36}
+                  className="h-10 w-auto rounded-sm"
+                />
+              ))}
+            </div>
 
             <div className="flex gap-3 mt-3">
               <a href="https://www.facebook.com/erstechnologiesllc/" aria-label="Facebook" className="p-2 rounded-md transition">

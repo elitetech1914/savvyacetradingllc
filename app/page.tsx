@@ -1,5 +1,4 @@
 "use client";
-import TestimonialsLightTheme from "@/components/TestimonialsLightTheme";
 import HeroSection from "../components/HeroSection";
 import ServicesSection from "../components/Services";
 import Pricing from "@/components/Pricing";
@@ -15,7 +14,6 @@ export default function Home(){
     <HeroSection/>
     <PoweringSection/>
     <ServicesSection/>
-    <TestimonialsLightTheme/>
     <Pricing />
     <div className="relative">
     <ContactForm />
