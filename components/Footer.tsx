@@ -5,11 +5,13 @@ import Link from "next/link";
 import { Facebook, Instagram } from "lucide-react";
 import Image from "next/image";
 
+
+
 const paymentCards = [
-  { src: "/card-images/visa-card.svg", alt: "Visa" },
-  { src: "/card-images/master-card.svg", alt: "Mastercard" },
-  { src: "/card-images/discover-card.svg", alt: "Discover" },
-  { src: "/card-images/amex-card.svg", alt: "American Express" },
+  { src: "/card-images/visa.png", alt: "Visa" },
+  { src: "/card-images/mastercard.png", alt: "Mastercard" },
+  { src: "/card-images/discover.png", alt: "Discover" },
+  { src: "/card-images/am-exp.png", alt: "American Express" },
 ];
 
 export default function Footer() {

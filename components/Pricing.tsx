@@ -540,7 +540,6 @@ export default function Pricing() {
 
   const savings = [
     { text: 'No hidden fees', icon: Shield },
-    { text: 'Cancel anytime', icon: Check },
     { text: '30-day money back', icon: Star }
   ]
 
@@ -659,8 +658,8 @@ export default function Pricing() {
         </div>
 
         {/* Savings Features */}
-        <div className="max-w-3xl mx-auto mt-12 sm:mt-16">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div className="max-w-2xl mx-auto mt-12 sm:mt-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
             {savings.map((item, index) => (
               <div key={index} className="flex flex-col items-center p-4">
                 <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mb-3">
