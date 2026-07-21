@@ -50,9 +50,9 @@ export default function Footer() {
             </p>
 
             <address className="not-italic text-sm text-[#8a6d8f] max-w-sm leading-6">
-              3127 E HEATHEROCK CIR
+              4607 COLONY HILLS DR
               <br />
-              SUGAR LAND, TX 77479-1907
+              SUGAR LAND, TX 77479
             </address>
 
             <h4 className="text-sm font-semibold text-[#5a3760] " >We accept</h4>

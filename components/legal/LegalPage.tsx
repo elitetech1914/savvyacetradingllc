@@ -15,8 +15,8 @@ type LegalPageProps = {
 
 const CONTACT_EMAIL = "support@erstechnologiesllc.com";
 const CONTACT_ADDRESS = [
-  "3127 E HEATHEROCK CIR",
-  "SUGAR LAND, TX 77479-1907",
+  "4607 COLONY HILLS DR",
+  "SUGAR LAND, TX 77479",
 ];
 
 export default function LegalPage({
