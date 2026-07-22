@@ -8,7 +8,7 @@ const onest = Onest({
   variable: '--font-inter', // optional CSS variable
   display: 'swap',          // optional, next/font handles good defaults
 })
-
+//vercel deploy
 export const metadata: Metadata = {
   title: "ERS Technologies",
   description: "Empowering businesses through innovative solutions",
