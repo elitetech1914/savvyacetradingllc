@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import PrivacyPolicy from "@/components/PrivacyPolicy";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | ERS Technologies",
-  description: "Read the ERS Technologies privacy policy.",
+  title: "Privacy Policy | Savvy Ace Trading LLC",
+  description: "Read the Savvy Ace Trading LLC privacy policy.",
 };
 
 export default function PrivacyPolicyPage() {

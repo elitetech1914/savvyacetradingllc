@@ -20,7 +20,7 @@ interface InfiniteMarqueeProps {
   direction?: 'left' | 'right';
   speed?: 'slow' | 'normal' | 'fast';
   gap?: 'sm' | 'md' | 'lg' | 'xl';
-  /** Hex or any valid CSS color. Default: #483953 */
+  /** Hex or any valid CSS color. Default: var(--color-brand-ink) */
   tintColor?: string;
   /**
    * 'mask' — use the image as a mask and paint with `tintColor` (exact color; requires an icon with alpha).
@@ -39,7 +39,7 @@ const InfiniteMarquee: React.FC<InfiniteMarqueeProps> = ({
   direction = 'left',
   speed = 'normal',
   gap = 'lg',
-  tintColor = '#483953',
+  tintColor = 'var(--color-brand-ink)',
   tintMode = 'mask',
   filterString
 }) => {
@@ -59,7 +59,7 @@ const InfiniteMarquee: React.FC<InfiniteMarqueeProps> = ({
     xl: 'gap-24'
   } as const;
 
-  // Default filter chain approximation for #483953 — filters are approximate.
+  // Default filter chain approximation for var(--color-brand-ink) — filters are approximate.
   const defaultFilter =
     'brightness(0) saturate(100%) sepia(1) hue-rotate(250deg) saturate(500%) brightness(.9) contrast(1.05)';
 

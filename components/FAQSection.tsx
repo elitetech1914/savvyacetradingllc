@@ -41,9 +41,9 @@ export default function FAQSection() {
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   return (
-    <section className="py-20 px-6 lg:px-20 bg-linear-to-b from-white to-[#fbf6fb]">
+    <section className="py-20 px-6 lg:px-20 bg-linear-to-b from-white to-brand-sand">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-4xl lg:text-5xl font-bold tracking-tight text-[#5a3760] leading-tight mb-12">
+        <h2 className="text-center text-4xl lg:text-5xl font-bold tracking-tight text-brand-ink leading-tight mb-12">
           What&apos;s often asked
           <br />
           about us
@@ -54,22 +54,22 @@ export default function FAQSection() {
           <div className="flex flex-col items-start justify-end h-full">
             <div className="flex items-center gap-4">
               <div>
-                <p className="text-sm text-[#483953] font-semibold">Have more questions?</p>
-                <p className="text-sm text-[#8a6d8f] max-w-xs">
+                <p className="text-sm text-brand-ink font-semibold">Have more questions?</p>
+                <p className="text-sm text-brand-muted max-w-xs">
                   Contact our team to talk through your project, services, and next steps.
                 </p>
               </div>
             </div>
 
-            <button className="mt-8 inline-flex items-center justify-center rounded-full bg-white/60 backdrop-blur-md px-6 py-3 shadow-md text-[#6b4a71] font-medium border border-white">
+            <button className="mt-8 inline-flex items-center justify-center rounded-full bg-white/60 backdrop-blur-md px-6 py-3 shadow-md text-brand-copy font-medium border border-white">
             <a href="#contact" >
               Contact Us
             </a>
             </button>
 
-            <div className="mt-12 text-sm text-[#a385a9]">
+            <div className="mt-12 text-sm text-brand-muted">
               <p>
-                Or email us at <span className="text-[#483953] font-medium">support@erstechnologiesllc.com</span>
+                Or email us at <span className="text-brand-ink font-medium">support@savvyacetradingllc.com</span>
               </p>
             </div>
           </div>
@@ -81,20 +81,20 @@ export default function FAQSection() {
               return (
                 <div
                   key={i}
-                  className={`relative max-w-[500px] rounded-2xl bg-white/80 p-5 lg:p-6 shadow-[0_8px_20px_-8px_rgba(120,86,129,0.15)] border border-white transition-all duration-700 ease-[cubic-bezier(.22,.9,.39,1)] overflow-hidden ${isOpen ? "max-h-[320px]" : "max-h-[90px]"}`}
+                  className={`relative max-w-[500px] rounded-2xl bg-white/80 p-5 lg:p-6 shadow-[0_8px_20px_-8px_color-mix(in_srgb,var(--color-brand-navy)_15%,transparent)] border border-white transition-all duration-700 ease-[cubic-bezier(.22,.9,.39,1)] overflow-hidden ${isOpen ? "max-h-[320px]" : "max-h-[90px]"}`}
                 >
                   <button
                     onClick={() => toggle(i)}
                     aria-expanded={isOpen}
                     className="w-full flex items-center justify-between gap-4 text-left"
                   >
-                    <span className="text-base lg:text-lg text-[#5a3760] font-medium">
+                    <span className="text-base lg:text-lg text-brand-ink font-medium">
                       {faq.question}
                     </span>
 
-                    <span className="flex items-center justify-center w-10 h-10 rounded-full border border-[#e8dff0] shadow-sm">
+                    <span className="flex items-center justify-center w-10 h-10 rounded-full border border-brand-line shadow-sm">
                       <svg
-                        className={`w-5 h-5 text-[#7c5aa0] transform transition-transform duration-700 ease-[cubic-bezier(.22,.9,.39,1)] ${isOpen ? "rotate-180" : "rotate-0"}`}
+                        className={`w-5 h-5 text-brand-teal transform transition-transform duration-700 ease-[cubic-bezier(.22,.9,.39,1)] ${isOpen ? "rotate-180" : "rotate-0"}`}
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ export default function FAQSection() {
                   {/* Content: animate opacity + translate for smooth feel */}
                   <div
                     aria-hidden={!isOpen}
-                    className={`mt-4 text-[#6f4f73] text-sm leading-relaxed transition-all duration-700 ease-[cubic-bezier(.22,.9,.39,1)] transform ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"}`}
+                    className={`mt-4 text-brand-copy text-sm leading-relaxed transition-all duration-700 ease-[cubic-bezier(.22,.9,.39,1)] transform ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"}`}
                     style={{ willChange: 'opacity, transform' }}
                   >
                     <p>{faq.answer}</p>

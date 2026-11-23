@@ -1,16 +1,16 @@
 import LegalPage from "@/components/legal/LegalPage";
 
 const intro = [
-  'The following terms and conditions apply to all projects, services, and engagements undertaken by ERS Technologies LLC ("ERS Technologies", "we", "us", or "our"). By accessing our website, signing up as a client, or using any of our services, you agree to be legally bound by these Terms and Conditions (the "Agreement"). If you do not accept these terms, you may not use our services. ERS Technologies may revise this Agreement at any time by updating this page. You are responsible for reviewing these terms periodically.',
-  "ERS Technologies provides a wide range of professional services, including but not limited to: Writing & Editing (ghostwriting, proofreading, copywriting, blog writing); Design & Creative (book covers, illustrations, merchandise design); Publishing & Distribution (copyright registration, printing, Amazon seller setup, e-commerce integration); Marketing & Promotion (SEO, digital campaigns, Amazon PPC, billboard marketing, reviews management); VR Simulation Services (custom training simulations, VR game development, 3D environment design, interactive walkthroughs); AI Agent Services (customer support AI, lead generation, research agents, coding assistants, voice agents); Web/App Development (UI/UX, cross-platform apps, backend integration, prototyping); Game Development (Unity/Unreal, mobile games, multiplayer integration); and UI/UX Design (user research, wireframing, prototyping, visual design).",
+  'The following terms and conditions apply to all projects, services, and engagements undertaken by Savvy Ace Trading LLC ("Savvy Ace Trading LLC", "we", "us", or "our"). By accessing our website, signing up as a client, or using any of our services, you agree to be legally bound by these Terms and Conditions (the "Agreement"). If you do not accept these terms, you may not use our services. Savvy Ace Trading LLC may revise this Agreement at any time by updating this page. You are responsible for reviewing these terms periodically.',
+  "Savvy Ace Trading LLC provides a wide range of professional services, including but not limited to: Writing & Editing (ghostwriting, proofreading, copywriting, blog writing); Design & Creative (book covers, illustrations, merchandise design); Publishing & Distribution (copyright registration, printing, Amazon seller setup, e-commerce integration); Marketing & Promotion (SEO, digital campaigns, Amazon PPC, billboard marketing, reviews management); VR Simulation Services (custom training simulations, VR game development, 3D environment design, interactive walkthroughs); AI Agent Services (customer support AI, lead generation, research agents, coding assistants, voice agents); Web/App Development (UI/UX, cross-platform apps, backend integration, prototyping); Game Development (Unity/Unreal, mobile games, multiplayer integration); and UI/UX Design (user research, wireframing, prototyping, visual design).",
 ] as const;
 
 const sections = [
   {
     title: "Terms of Use & Acceptance",
     paragraphs: [
-      "By registering as a client or using any service from ERS Technologies, you represent that you are at least 18 years old, that all information you provide is accurate and complete, and that you have the authority to bind any entity on whose behalf you act. We may accept or reject any registration in our sole discretion.",
-      "ERS Technologies reserves the right to modify, suspend, or discontinue any service at any time without notice. We may also pre-screen, refuse, or remove any project or user content that violates this Agreement or is otherwise objectionable (for example, illegal, obscene, defamatory, or infringing on others' rights). We will cooperate with law enforcement if illegal activity is suspected.",
+      "By registering as a client or using any service from Savvy Ace Trading LLC, you represent that you are at least 18 years old, that all information you provide is accurate and complete, and that you have the authority to bind any entity on whose behalf you act. We may accept or reject any registration in our sole discretion.",
+      "Savvy Ace Trading LLC reserves the right to modify, suspend, or discontinue any service at any time without notice. We may also pre-screen, refuse, or remove any project or user content that violates this Agreement or is otherwise objectionable (for example, illegal, obscene, defamatory, or infringing on others' rights). We will cooperate with law enforcement if illegal activity is suspected.",
     ],
   },
   {
@@ -50,15 +50,15 @@ const sections = [
       "For web/app development: no refund after design approval and development has started. For game development: no refund after initial prototype approval.",
       "If you are unresponsive for 10 consecutive business days via your registered email, the project is deemed accepted and no refund will be issued.",
       "Bundled service packages: refunds may apply only to the specific service you are dissatisfied with, not the entire bundle.",
-      "ERS Technologies reserves the right to cancel any project at any time for cause (for example, violation of terms or non-payment). In such cases, a pro-rata refund for undelivered work may be issued at our sole discretion.",
-      "After a refund, all rights to any deliverables (concepts, code, designs) revert to ERS Technologies, and you may not use them.",
+      "Savvy Ace Trading LLC reserves the right to cancel any project at any time for cause (for example, violation of terms or non-payment). In such cases, a pro-rata refund for undelivered work may be issued at our sole discretion.",
+      "After a refund, all rights to any deliverables (concepts, code, designs) revert to Savvy Ace Trading LLC, and you may not use them.",
     ],
   },
   {
     title: "Ownership & Rights to Use",
     paragraphs: [
-      "Upon full payment for the specific service, you will own the final deliverables (for example, final logo, completed app, VR walkthrough, AI agent code, finished game) as expressly agreed in your project statement of work. However, ERS Technologies retains all rights to: (a) intermediate concepts, drafts, and rejected versions; (b) any underlying tools, frameworks, or reusable components developed by us; and (c) the right to display the final work in our portfolio or marketing materials unless a non-disclosure agreement prohibits it.",
-      "We do not conduct trademark, copyright, or patent searches. You are responsible for ensuring that your final deliverables do not infringe third-party rights. ERS Technologies grants no warranty of non-infringement.",
+      "Upon full payment for the specific service, you will own the final deliverables (for example, final logo, completed app, VR walkthrough, AI agent code, finished game) as expressly agreed in your project statement of work. However, Savvy Ace Trading LLC retains all rights to: (a) intermediate concepts, drafts, and rejected versions; (b) any underlying tools, frameworks, or reusable components developed by us; and (c) the right to display the final work in our portfolio or marketing materials unless a non-disclosure agreement prohibits it.",
+      "We do not conduct trademark, copyright, or patent searches. You are responsible for ensuring that your final deliverables do not infringe third-party rights. Savvy Ace Trading LLC grants no warranty of non-infringement.",
       "For AI agent services: you own the trained agent logic and configuration, but we retain rights to our proprietary agent framework and any pre-built integrations.",
       "For VR simulations: you own the final immersive experience content, but we retain rights to any core interaction libraries or environment templates.",
     ],
@@ -66,21 +66,21 @@ const sections = [
   {
     title: "Non-Disclosure & Privacy",
     paragraphs: [
-      "ERS Technologies will use commercially reasonable efforts to keep your confidential information secure. However, we cannot guarantee absolute security. We may disclose your information if required by law or to enforce our rights. Our privacy policy (available on our website) explains how we collect and process personal data.",
+      "Savvy Ace Trading LLC will use commercially reasonable efforts to keep your confidential information secure. However, we cannot guarantee absolute security. We may disclose your information if required by law or to enforce our rights. Our privacy policy (available on our website) explains how we collect and process personal data.",
     ],
   },
   {
     title: "Disclaimer of Warranties & Limitation of Liability",
     paragraphs: [
-      'ALL SERVICES AND DELIVERABLES ARE PROVIDED "AS IS" AND "AS AVAILABLE." ERS TECHNOLOGIES MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.',
-      "We do not warrant that our services will be uninterrupted, error-free, or meet your specific requirements. To the maximum extent permitted by law, ERS Technologies shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including lost profits or data, arising from your use of our services.",
+      'ALL SERVICES AND DELIVERABLES ARE PROVIDED "AS IS" AND "AS AVAILABLE." Savvy Ace Trading LLC MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.',
+      "We do not warrant that our services will be uninterrupted, error-free, or meet your specific requirements. To the maximum extent permitted by law, Savvy Ace Trading LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including lost profits or data, arising from your use of our services.",
       "Our total liability for any claim arising under this Agreement shall not exceed the total amount you paid to us for the specific service giving rise to the claim. Some states do not allow the exclusion of certain damages, so this limitation may not apply to you.",
     ],
   },
   {
     title: "Indemnification",
     paragraphs: [
-      "You agree to indemnify, defend, and hold harmless ERS Technologies and its officers, employees, and agents from any claim, loss, liability, or expense (including reasonable attorneys' fees) arising from your violation of these Terms, your misuse of our services, or your infringement of any third-party rights.",
+      "You agree to indemnify, defend, and hold harmless Savvy Ace Trading LLC and its officers, employees, and agents from any claim, loss, liability, or expense (including reasonable attorneys' fees) arising from your violation of these Terms, your misuse of our services, or your infringement of any third-party rights.",
     ],
   },
   {

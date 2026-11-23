@@ -15,11 +15,11 @@ export default function GetStartedButton({ href, onClick, className = "", childr
   // - wrapper uses inline-flex + items-center + h-8 so content always vertically centered
   // - text uses leading-none to avoid baseline nudges
   // - icon is same height as button (h-8 w-8) so it doesn't change size on hover
-  const base = `group inline-flex items-center h-8 rounded-full bg-gradient-to-r from-[#a7d8ff] via-[#c9a7ff] to-[#c08bff] shadow-sm ring-1 ring-white/20 px-3 ${className}`;
+  const base = `group inline-flex items-center h-8 rounded-full bg-gradient-to-r from-brand-navy via-brand-deep to-brand-ocean shadow-sm ring-1 ring-white/20 px-3 ${className}`;
 
-  const textClass = `text-white text-sm font-medium leading-none select-none transition-colors duration-200 group-hover:text-[#6b46ff]`;
+  const textClass = `text-white text-sm font-medium leading-none select-none transition-colors duration-200 group-hover:text-brand-deep`;
 
-  const iconClass = `ml-2 flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center bg-white/10 ring-0 transition-colors duration-200 group-hover:bg-white group-hover:text-[#6b46ff]`;
+  const iconClass = `ml-2 flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center bg-white/10 ring-0 transition-colors duration-200 group-hover:bg-white group-hover:text-brand-deep`;
 
   const inner = (
     <span className="flex items-center h-full">

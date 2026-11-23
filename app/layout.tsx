@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Onest } from 'next/font/google'
 import "./globals.css";
 import BottomBar from "@/components/BottomBar";
+import { brandName } from "@/lib/brand";
 
 const onest = Onest({
   subsets: ['latin'],
@@ -10,7 +11,7 @@ const onest = Onest({
 })
 //vercel deploy
 export const metadata: Metadata = {
-  title: "ERS Technologies",
+  title: brandName,
   description: "Empowering businesses through innovative solutions",
 };
 

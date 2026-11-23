@@ -16,13 +16,13 @@ export default function Example() {
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
           }}
-          className="relative left-1/2 -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-288.75"
+          className="relative left-1/2 -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-gradient-to-tr from-brand-gold to-brand-aqua opacity-30 sm:left-[calc(50%-40rem)] sm:w-288.75"
         />
       </div>
 
       {/* Content */}
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-4xl font-bold tracking-tight text-balance text-[#483953] sm:text-5xl bg-gradient-to-r from-[#483953] to-[#6d5b7a] bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold tracking-tight text-balance text-brand-ink sm:text-5xl bg-gradient-to-r from-brand-ink to-brand-copy bg-clip-text text-transparent">
           Contact Us
         </h2>
         <p className="mt-4 text-lg/8 text-gray-600 max-w-md mx-auto">
@@ -34,7 +34,7 @@ export default function Example() {
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           {/* First Name */}
           <div className="group">
-            <label htmlFor="first-name" className="block text-sm/6 font-semibold text-[#483953] mb-2 transition-colors duration-200 group-focus-within:text-indigo-600">
+            <label htmlFor="first-name" className="block text-sm/6 font-semibold text-brand-ink mb-2 transition-colors duration-200 group-focus-within:text-brand-deep">
               First name
             </label>
             <div className="mt-2.5 relative">
@@ -43,9 +43,9 @@ export default function Example() {
                 name="first-name"
                 type="text"
                 autoComplete="given-name"
-                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-[#483953] border border-gray-200 shadow-sm transition-all duration-200 
-                          placeholder:text-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none
-                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(99,102,241,0.1)]"
+                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-brand-ink border border-gray-200 shadow-sm transition-all duration-200
+                          placeholder:text-gray-400 focus:border-brand-teal focus:ring-2 focus:ring-brand-line-strong focus:outline-none
+                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(15,118,110,0.1)]"
                 placeholder="John"
               />
             </div>
@@ -53,7 +53,7 @@ export default function Example() {
 
           {/* Last Name */}
           <div className="group">
-            <label htmlFor="last-name" className="block text-sm/6 font-semibold text-[#483953] mb-2 transition-colors duration-200 group-focus-within:text-indigo-600">
+            <label htmlFor="last-name" className="block text-sm/6 font-semibold text-brand-ink mb-2 transition-colors duration-200 group-focus-within:text-brand-deep">
               Last name
             </label>
             <div className="mt-2.5">
@@ -62,9 +62,9 @@ export default function Example() {
                 name="last-name"
                 type="text"
                 autoComplete="family-name"
-                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-[#483953] border border-gray-200 shadow-sm transition-all duration-200 
-                          placeholder:text-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none
-                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(99,102,241,0.1)]"
+                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-brand-ink border border-gray-200 shadow-sm transition-all duration-200
+                          placeholder:text-gray-400 focus:border-brand-teal focus:ring-2 focus:ring-brand-line-strong focus:outline-none
+                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(15,118,110,0.1)]"
                 placeholder="Doe"
               />
             </div>
@@ -72,7 +72,7 @@ export default function Example() {
 
           {/* Company */}
           <div className="sm:col-span-2 group">
-            <label htmlFor="company" className="block text-sm/6 font-semibold text-[#483953] mb-2 transition-colors duration-200 group-focus-within:text-indigo-600">
+            <label htmlFor="company" className="block text-sm/6 font-semibold text-brand-ink mb-2 transition-colors duration-200 group-focus-within:text-brand-deep">
               Company
             </label>
             <div className="mt-2.5">
@@ -81,9 +81,9 @@ export default function Example() {
                 name="company"
                 type="text"
                 autoComplete="organization"
-                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-[#483953] border border-gray-200 shadow-sm transition-all duration-200 
-                          placeholder:text-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none
-                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(99,102,241,0.1)]"
+                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-brand-ink border border-gray-200 shadow-sm transition-all duration-200
+                          placeholder:text-gray-400 focus:border-brand-teal focus:ring-2 focus:ring-brand-line-strong focus:outline-none
+                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(15,118,110,0.1)]"
                 placeholder="Your company name"
               />
             </div>
@@ -91,7 +91,7 @@ export default function Example() {
 
           {/* Email */}
           <div className="sm:col-span-2 group">
-            <label htmlFor="email" className="block text-sm/6 font-semibold text-[#483953] mb-2 transition-colors duration-200 group-focus-within:text-indigo-600">
+            <label htmlFor="email" className="block text-sm/6 font-semibold text-brand-ink mb-2 transition-colors duration-200 group-focus-within:text-brand-deep">
               Email
             </label>
             <div className="mt-2.5">
@@ -100,9 +100,9 @@ export default function Example() {
                 name="email"
                 type="email"
                 autoComplete="email"
-                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-[#483953] border border-gray-200 shadow-sm transition-all duration-200 
-                          placeholder:text-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none
-                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(99,102,241,0.1)]"
+                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-brand-ink border border-gray-200 shadow-sm transition-all duration-200
+                          placeholder:text-gray-400 focus:border-brand-teal focus:ring-2 focus:ring-brand-line-strong focus:outline-none
+                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(15,118,110,0.1)]"
                 placeholder="john@example.com"
               />
             </div>
@@ -110,13 +110,13 @@ export default function Example() {
 
           {/* Phone Number */}
           <div className="sm:col-span-2 group">
-            <label htmlFor="phone-number" className="block text-sm/6 font-semibold text-[#483953] mb-2 transition-colors duration-200 group-focus-within:text-indigo-600">
+            <label htmlFor="phone-number" className="block text-sm/6 font-semibold text-brand-ink mb-2 transition-colors duration-200 group-focus-within:text-brand-deep">
               Phone number
             </label>
             <div className="mt-2.5">
-              <div className="flex rounded-lg bg-white border border-gray-200 shadow-sm transition-all duration-200 
-                           shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus-within:shadow-[inset_0_2px_12px_rgba(99,102,241,0.1)]
-                           focus-within:border-indigo-500 focus-within:ring-2 focus-within:ring-indigo-200">
+              <div className="flex rounded-lg bg-white border border-gray-200 shadow-sm transition-all duration-200
+                           shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus-within:shadow-[inset_0_2px_12px_rgba(15,118,110,0.1)]
+                           focus-within:border-brand-teal focus-within:ring-2 focus-within:ring-brand-line-strong">
                 <div className="grid shrink-0 grid-cols-1 focus-within:relative">
                   <select
                     id="country"
@@ -139,7 +139,7 @@ export default function Example() {
                   name="phone-number"
                   type="text"
                   placeholder="123-456-7890"
-                  className="block min-w-0 grow py-3 pr-4 pl-3 text-base text-[#483953] placeholder:text-gray-400 focus:outline-none border-l border-gray-200 bg-transparent"
+                  className="block min-w-0 grow py-3 pr-4 pl-3 text-base text-brand-ink placeholder:text-gray-400 focus:outline-none border-l border-gray-200 bg-transparent"
                 />
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function Example() {
 
           {/* Message */}
           <div className="sm:col-span-2 group">
-            <label htmlFor="message" className="block text-sm/6 font-semibold text-[#483953] mb-2 transition-colors duration-200 group-focus-within:text-indigo-600">
+            <label htmlFor="message" className="block text-sm/6 font-semibold text-brand-ink mb-2 transition-colors duration-200 group-focus-within:text-brand-deep">
               Message
             </label>
             <div className="mt-2.5">
@@ -155,9 +155,9 @@ export default function Example() {
                 id="message"
                 name="message"
                 rows={5}
-                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-[#483953] border border-gray-200 shadow-sm transition-all duration-200 
-                          placeholder:text-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none resize-none
-                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(99,102,241,0.1)]"
+                className="block w-full rounded-lg bg-white px-4 py-3 text-base text-brand-ink border border-gray-200 shadow-sm transition-all duration-200
+                          placeholder:text-gray-400 focus:border-brand-teal focus:ring-2 focus:ring-brand-line-strong focus:outline-none resize-none
+                          shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] focus:shadow-[inset_0_2px_12px_rgba(15,118,110,0.1)]"
                 placeholder="Tell us how we can help you..."
               />
             </div>
@@ -169,8 +169,8 @@ export default function Example() {
               <button
                 type="button"
                 onClick={() => setIsChecked(!isChecked)}
-                className={`relative inline-flex w-11 h-6 shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#af8aff] focus:ring-offset-2 ${
-                  isChecked ? 'bg-[#af8aff]' : 'bg-gray-200'
+                className={`relative inline-flex w-11 h-6 shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2 ${
+                  isChecked ? 'bg-brand-teal' : 'bg-gray-200'
                 }`}
               >
                 <span
@@ -191,11 +191,11 @@ export default function Example() {
             </div>
             <label htmlFor="agree-to-policies" className="text-sm/6 text-gray-600 flex-1">
               By selecting this, you agree to our{' '}
-              <a href="/privacy-policy" className="font-semibold whitespace-nowrap text-[#8a67d8] hover:text-[#cb94eb]transition-colors duration-200">
+              <a href="/privacy-policy" className="font-semibold whitespace-nowrap text-brand-teal hover:text-brand-ocean transition-colors duration-200">
                 privacy policy
               </a>
               {' '}and{' '}
-              <a href="/terms-and-conditions" className="font-semibold whitespace-nowrap text-[#8a67d8] hover:text-[#cb94eb] transition-colors duration-200">
+              <a href="/terms-and-conditions" className="font-semibold whitespace-nowrap text-brand-teal hover:text-brand-ocean transition-colors duration-200">
                 terms &amp; conditions
               </a>
               .
@@ -208,10 +208,10 @@ export default function Example() {
           <button
             type="submit"
             disabled={!isChecked}
-            className="group relative block w-full rounded-lg bg-gradient-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] disabled:from-gray-500 disabled:via-gray-400 disabled:to-gray-500 text-white px-6 py-4 text-center text-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#8a67d8] focus:ring-offset-2 disabled:cursor-not-allowed disabled:shadow-none disabled:scale-100 overflow-hidden"
+            className="group relative block w-full rounded-lg bg-gradient-to-r from-brand-navy via-brand-teal to-brand-ocean disabled:from-gray-500 disabled:via-gray-400 disabled:to-gray-500 text-white px-6 py-4 text-center text-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2 disabled:cursor-not-allowed disabled:shadow-none disabled:scale-100 overflow-hidden"
           >
             <span className="relative z-10">Let&apos;s talk</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-teal to-brand-ocean text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
           </button>
         </div>
       </form>

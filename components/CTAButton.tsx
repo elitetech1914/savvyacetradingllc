@@ -1,14 +1,14 @@
 import React from "react";
 
-// Light-purple themed FindDevsButton (Tailwind + scoped styles)
+// Light-themed FindDevsButton (Tailwind + scoped styles)
 export default function FindDevsButton() {
   return (
-    <div className="inline-block relative rounded-[30px] p-2 shadow-[inset_0_3px_6px_rgba(99,102,241,0.06)]">
+    <div className="inline-block relative rounded-[30px] p-2 shadow-[inset_0_3px_6px_rgba(15,118,110,0.06)]">
       <button
         type="button"
         aria-label="Find Devs"
         title="Find Devs"
-        className={`btn relative flex items-center justify-center px-5 py-3 md:px-6 md:py-3 rounded-[24px] bg-white/95 border border-purple-100 shadow-inner cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all`}
+        className={`btn relative flex items-center justify-center px-5 py-3 md:px-6 md:py-3 rounded-[24px] bg-white/95 border border-brand-line shadow-inner cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-line-strong transition-all`}
       >
         <svg
           className="btn-svg h-6 w-6 mr-2 ml-6 animate-flicker"
@@ -42,7 +42,7 @@ export default function FindDevsButton() {
       </button>
 
       <style jsx>{`
-        /* Outer soft highlight (subtle purple tint) */
+        /* Outer soft highlight (subtle teal tint) */
         .btn::before {
           content: "";
           position: absolute;
@@ -55,7 +55,7 @@ export default function FindDevsButton() {
           background-image: linear-gradient(
             180deg,
             rgba(255, 255, 255, 0.7),
-            rgba(250, 245, 255, 0.5)
+            color-mix(in srgb, var(--color-brand-sand) 50%, transparent)
           );
           z-index: -1;
           transition: box-shadow 0.4s, filter 0.4s;
@@ -72,19 +72,19 @@ export default function FindDevsButton() {
           pointer-events: none;
           background-image: linear-gradient(
             0deg,
-            rgba(110, 74, 255, 0.06),
-            rgba(236, 232, 255, 0.55),
+            color-mix(in srgb, var(--color-brand-teal) 6%, transparent),
+            color-mix(in srgb, var(--color-brand-line) 55%, transparent),
             transparent
           );
           opacity: 0;
           transition: opacity 0.25s ease, filter 0.25s ease;
         }
 
-        /* Letters: darker purple text with subtle weight + staggered animation */
+        /* Letters: deep teal text with subtle weight + staggered animation */
         .btn-letter {
           position: relative;
           display: inline-block;
-          color: rgba(74, 20, 140, 0.95); /* deep purple */
+          color: color-mix(in srgb, var(--color-brand-deep) 95%, transparent);
           font-weight: 600;
           letter-spacing: 0.02em;
           animation: letter-anim 2s ease-in-out infinite;
@@ -94,23 +94,23 @@ export default function FindDevsButton() {
         @keyframes letter-anim {
           0% {
             text-shadow: none;
-            color: rgba(74, 20, 140, 0.95);
+            color: color-mix(in srgb, var(--color-brand-deep) 95%, transparent);
           }
           50% {
-            text-shadow: 0 0 8px rgba(168, 85, 247, 0.18);
-            color: rgba(26, 6, 64, 1);
+            text-shadow: 0 0 8px color-mix(in srgb, var(--color-brand-teal) 18%, transparent);
+            color: var(--color-brand-ink);
           }
           100% {
             text-shadow: none;
-            color: rgba(74, 20, 140, 0.95);
+            color: color-mix(in srgb, var(--color-brand-deep) 95%, transparent);
           }
         }
 
         /* SVG fill and glow */
         .btn-svg {
-          --svg-fill: #6d28d9; /* purple-600 */
+          --svg-fill: var(--color-brand-teal);
           fill: var(--svg-fill);
-          filter: drop-shadow(0 0 2px rgba(109, 40, 217, 0.06));
+          filter: drop-shadow(0 0 2px color-mix(in srgb, var(--color-brand-deep) 6%, transparent));
           transition: fill 0.25s, filter 0.25s, transform 0.18s, opacity 0.25s;
         }
 
@@ -128,7 +128,7 @@ export default function FindDevsButton() {
           animation-delay: 0.5s;
         }
 
-        /* Hover / focus states (purple accents) */
+        /* Hover / focus states (teal accents) */
         .btn:hover::after,
         .btn:focus::after,
         .btn:focus-visible::after {
@@ -138,14 +138,14 @@ export default function FindDevsButton() {
 
         .btn:hover .btn-svg,
         .btn:focus .btn-svg {
-          fill: #7c3aed; /* purple-500 */
-          filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.24));
+          fill: var(--color-brand-teal);
+          filter: drop-shadow(0 0 8px color-mix(in srgb, var(--color-brand-teal) 24%, transparent));
           transform: translateY(-1px);
         }
 
         .btn:active {
-          border-color: rgba(147, 51, 234, 0.9);
-          background-color: rgba(243, 240, 255, 0.9);
+          border-color: color-mix(in srgb, var(--color-brand-teal) 90%, transparent);
+          background-color: color-mix(in srgb, var(--color-brand-mist) 90%, transparent);
           transform: translateY(0.5px);
         }
 

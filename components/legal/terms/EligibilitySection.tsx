@@ -6,13 +6,13 @@ export default function EligibilitySection() {
       <p className={paragraphClass}>
         <strong>(a) Eligibility Requirements.</strong> To register as a Client,
         you must be at least 18 years of age, agree to these Terms and
-        Conditions and ERS Technologies privacy policy, and complete the
+        Conditions and Savvy Ace Trading LLC privacy policy, and complete the
         registration procedure. By registering as a Client, you represent and
         warrant that you meet these eligibility requirements, that the
         information you include as part of the registration process is complete
         and accurate and, if you are registering on behalf of an entity, that
         you are authorized to bind that entity to these Terms and Conditions.
-        ERS Technologies may accept or reject your registration in its sole
+        Savvy Ace Trading LLC may accept or reject your registration in its sole
         discretion.
       </p>
       <p className={paragraphClass}>
@@ -57,7 +57,7 @@ export default function EligibilitySection() {
         You further agree not to (a) use any incomplete, false or inaccurate
         biographical information or other information for purposes of
         registering as a Client; (b) delete or revise any material or other
-        information of any other user of ERS Technologies; (c) take any action
+        information of any other user of Savvy Ace Trading LLC; (c) take any action
         that imposes an unreasonable or disproportionately large load on the
         Website&apos;s infrastructure.
       </p>

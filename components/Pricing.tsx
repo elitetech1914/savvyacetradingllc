@@ -19,7 +19,7 @@ const servicePlans = {
         'Email support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -36,7 +36,7 @@ const servicePlans = {
         'Priority support'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -53,7 +53,7 @@ const servicePlans = {
         'Dedicated account manager'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ],
   'Design & Creative': [
@@ -71,7 +71,7 @@ const servicePlans = {
         'Email support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -88,7 +88,7 @@ const servicePlans = {
         'Priority support'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -105,7 +105,7 @@ const servicePlans = {
         'Priority revisions'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ],
   'Publishing & Distribution': [
@@ -123,7 +123,7 @@ const servicePlans = {
         'Email support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -140,7 +140,7 @@ const servicePlans = {
         'Priority support'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -157,7 +157,7 @@ const servicePlans = {
         'Custom reporting'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ],
   'Marketing & Promotion': [
@@ -175,7 +175,7 @@ const servicePlans = {
         'Email support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -192,7 +192,7 @@ const servicePlans = {
         'Monthly performance notes'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -209,7 +209,7 @@ const servicePlans = {
         'Custom reporting dashboard'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ],
   'VR Simulation Services': [
@@ -227,7 +227,7 @@ const servicePlans = {
         'Email support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -244,7 +244,7 @@ const servicePlans = {
         'Priority support'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -261,7 +261,7 @@ const servicePlans = {
         'Dedicated project manager'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ],
   'AI Agent Services': [
@@ -279,7 +279,7 @@ const servicePlans = {
         'Email support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -296,7 +296,7 @@ const servicePlans = {
         'Priority support'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -313,7 +313,7 @@ const servicePlans = {
         'Dedicated automation lead'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ],
 
@@ -334,7 +334,7 @@ const servicePlans = {
         '1 month support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -351,7 +351,7 @@ const servicePlans = {
         '6 months support'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -368,7 +368,7 @@ const servicePlans = {
         'Dedicated account manager'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ],
 
@@ -389,7 +389,7 @@ const servicePlans = {
         'Email support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -406,7 +406,7 @@ const servicePlans = {
         '6 months support'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -424,7 +424,7 @@ const servicePlans = {
         'Priority support'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ],
   'Game Development': [
@@ -442,7 +442,7 @@ const servicePlans = {
         'Email support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -459,7 +459,7 @@ const servicePlans = {
         'Priority support'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -476,7 +476,7 @@ const servicePlans = {
         'Custom milestones'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ],
   'UI/UX Design': [
@@ -494,7 +494,7 @@ const servicePlans = {
         'Email support'
       ],
       cta: 'Get Started',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-brand-navy to-brand-ocean'
     },
     {
       name: 'Professional',
@@ -511,7 +511,7 @@ const servicePlans = {
         'Priority support'
       ],
       cta: 'Start Project',
-      color: 'from-[#9694fa] via-[#8a67d8] to-[#cb94eb]'
+      color: 'from-brand-navy via-brand-teal to-brand-ocean'
     },
     {
       name: 'Enterprise',
@@ -528,7 +528,7 @@ const servicePlans = {
         'Dedicated design lead'
       ],
       cta: 'Contact Sales',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-brand-bronze to-brand-bronze-deep'
     }
   ]
 }
@@ -548,10 +548,10 @@ export default function Pricing() {
       <div className="container mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#483953] mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-ink mb-4">
             Simple, Transparent Pricing
           </h2>
-          <p className="text-lg sm:text-xl text-[#483953] mb-8">
+          <p className="text-lg sm:text-xl text-brand-ink mb-8">
             Choose the perfect plan for your business. All plans include our core features with no surprises.
           </p>
 
@@ -572,8 +572,8 @@ export default function Pricing() {
                   onClick={() => setActiveService(service)}
                   className={`rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 ${
                     isActive
-                      ? 'border-[#8a67d8] bg-[#8a67d8] text-white shadow-md shadow-purple-200'
-                      : 'border-[#eadff0] bg-white text-[#7b597f] hover:border-[#cbb6dc] hover:text-[#483953]'
+                      ? 'border-brand-teal bg-brand-teal text-white shadow-md shadow-brand-line-strong'
+                      : 'border-brand-line bg-white text-brand-copy hover:border-brand-line-strong hover:text-brand-ink'
                   }`}
                 >
                   {service}
@@ -590,13 +590,13 @@ export default function Pricing() {
               key={plan.name}
               className={`relative flex flex-col rounded-2xl transition-all duration-300 hover:scale-105 h-full ${
                 plan.popular
-                  ? 'border-2 border-purple-500 shadow-2xl transform -translate-y-2'
+                  ? 'border-2 border-brand-teal shadow-2xl transform -translate-y-2'
                   : 'border border-gray-200 shadow-lg'
               }`}
             >
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-linear-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] text-white px-4 py-1 rounded-full text-sm font-medium whitespace-nowrap">
+                  <span className="bg-linear-to-r from-brand-navy via-brand-teal to-brand-ocean text-white px-4 py-1 rounded-full text-sm font-medium whitespace-nowrap">
                     Most Popular
                   </span>
                 </div>
@@ -609,14 +609,14 @@ export default function Pricing() {
                   <div className={`w-12 h-12 bg-linear-to-r ${plan.color} rounded-lg flex items-center justify-center mx-auto mb-4`}>
                     <plan.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#483953] mb-2">{plan.name}</h3>
-                  <p className="text-[#483953] text-sm">{plan.description}</p>
+                  <h3 className="text-xl font-bold text-brand-ink mb-2">{plan.name}</h3>
+                  <p className="text-brand-ink text-sm">{plan.description}</p>
                 </div>
 
                 {/* Price */}
                 <div className="text-center mb-6">
                   <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-4xl font-bold text-[#483953]">
+                    <span className="text-4xl font-bold text-brand-ink">
                       ${plan.annualPrice}
                     </span>
                   </div>
@@ -631,7 +631,7 @@ export default function Pricing() {
                     {plan.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                        <span className="text-[#483953] text-sm">{feature}</span>
+                        <span className="text-brand-ink text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -643,7 +643,7 @@ export default function Pricing() {
                   <button
                     className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
                       plan.popular
-                        ? 'bg-linear-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] text-white hover:from-[#7f7ed4] hover:via-[#7759b9] hover:to-[#ab7dc6] shadow-lg hover:shadow-xl'
+                        ? 'bg-linear-to-r from-brand-navy via-brand-teal to-brand-ocean text-white hover:from-brand-navy-hover hover:via-brand-deep hover:to-brand-ocean-hover shadow-lg hover:shadow-xl'
                         : 'bg-gray-900 text-white hover:bg-gray-800'
                     }`}
                   >
@@ -662,10 +662,10 @@ export default function Pricing() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
             {savings.map((item, index) => (
               <div key={index} className="flex flex-col items-center p-4">
-                <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mb-3">
-                  <item.icon className="w-5 h-5 text-purple-600" />
+                <div className="w-10 h-10 bg-brand-line rounded-full flex items-center justify-center mb-3">
+                  <item.icon className="w-5 h-5 text-brand-deep" />
                 </div>
-                <span className="text-[#483953] font-medium text-sm">{item.text}</span>
+                <span className="text-brand-ink font-medium text-sm">{item.text}</span>
               </div>
             ))}
           </div>
@@ -673,7 +673,7 @@ export default function Pricing() {
 
         {/* FAQ/Additional Info */}
         <div className="max-w-3xl mx-auto mt-12 text-center">
-          <p className="text-[#483953] text-sm">
+          <p className="text-brand-ink text-sm">
             Need a custom solution? Contact us for a tailored quote.
           </p>
         </div>

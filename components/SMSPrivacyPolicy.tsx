@@ -1,7 +1,7 @@
 import LegalPage from "@/components/legal/LegalPage";
 
 const intro = [
-  "ERS Technologies values your trust and is committed to protecting your privacy when we communicate by text message.",
+  "Savvy Ace Trading LLC values your trust and is committed to protecting your privacy when we communicate by text message.",
   "This SMS Privacy Policy explains how we use mobile numbers, what type of text communications you may receive, and the choices available to you.",
 ];
 
@@ -9,7 +9,7 @@ const sections = [
   {
     title: "How We Use Your Number",
     paragraphs: [
-      "When you provide your mobile number to ERS Technologies, we use it only for legitimate business communications related to your inquiry, project, account, or services.",
+      "When you provide your mobile number to Savvy Ace Trading LLC, we use it only for legitimate business communications related to your inquiry, project, account, or services.",
     ],
     bullets: [
       "Share updates about your project, quote, or service request",
@@ -21,7 +21,7 @@ const sections = [
   {
     title: "Our Messaging Providers",
     paragraphs: [
-      "ERS Technologies may use secure third-party telephony, CRM, or messaging platforms to send and manage SMS communications. These vendors process messages on our behalf so we can deliver communications reliably and securely.",
+      "Savvy Ace Trading LLC may use secure third-party telephony, CRM, or messaging platforms to send and manage SMS communications. These vendors process messages on our behalf so we can deliver communications reliably and securely.",
     ],
   },
   {
@@ -39,7 +39,7 @@ const sections = [
   {
     title: "Your Choices",
     paragraphs: [
-      "You may contact ERS Technologies at any time to update your communication preferences or ask about the data connected to your SMS communications.",
+      "You may contact Savvy Ace Trading LLC at any time to update your communication preferences or ask about the data connected to your SMS communications.",
     ],
     bullets: [
       "Update your communication preferences",
@@ -51,7 +51,7 @@ const sections = [
   {
     title: "Contact Us",
     paragraphs: [
-      "If you have questions about this SMS Privacy Policy, please contact ERS Technologies using the details below.",
+      "If you have questions about this SMS Privacy Policy, please contact Savvy Ace Trading LLC using the details below.",
     ],
   },
 ] as const;

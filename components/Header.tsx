@@ -13,7 +13,7 @@ import {
   SheetContent,
   SheetClose,
 } from "@/components/ui/sheet";
-import Image from "next/image";
+import BrandWordmark from "@/components/BrandWordmark";
 
 const navItems = [
   { href: "#services", label: "Services" },
@@ -26,18 +26,10 @@ export default function Header() {
     <header className="absolute top-8 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl z-50">
       <div className="flex items-center justify-between">
         {/* Logo / Brand */}
-        <div className="">
-          <Image
-          src={"/images/logo.png"}
-          width={200}
-          height={200}
-          alt="ERS Technologies Logo"
-          className="object-contain"
-          />
-        </div>
+        <BrandWordmark />
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8 text-[#573e69] font-medium">
+        <nav className="hidden md:flex items-center gap-8 text-brand-ink font-medium">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className="hover:underline">
               {item.label}
@@ -47,7 +39,7 @@ export default function Header() {
           <Link href="#contact" className="ml-2">
             <span
               style={{ boxShadow: "inset 0px 2px 4px rgba(0, 0, 0, 0.1)" }}
-              className="inline-block bg-gradient-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] text-white py-2 px-5 rounded-2xl font-semibold"
+              className="inline-block bg-gradient-to-r from-brand-navy via-brand-teal to-brand-ocean text-white py-2 px-5 rounded-2xl font-semibold"
             >
               Get A Quote
             </span>
@@ -66,15 +58,7 @@ export default function Header() {
             <SheetContent side="right" className="w-[90vw] sm:w-[420px] p-5">
               <DialogTitle className="sr-only">Menu</DialogTitle>
               <div className="flex items-center justify-between">
-                <div className="">
-                  <Image
-                  src={"/images/logo.png"}
-                  width={200}
-                  height={200}
-                  alt="ERS Technologies Logo"
-                  className="object-contain"
-                  />
-                </div>
+                <BrandWordmark />
                 <SheetClose asChild>
                   <Button variant="ghost" aria-label="Close menu">
                   </Button>
@@ -93,7 +77,7 @@ export default function Header() {
                 ))}
 
                 <Link href="#contact" className="mt-3 block">
-                  <span className="inline-block w-full text-center py-3 rounded-2xl bg-gradient-to-r from-[#9694fa] via-[#8a67d8] to-[#cb94eb] text-white font-semibold">
+                  <span className="inline-block w-full text-center py-3 rounded-2xl bg-gradient-to-r from-brand-navy via-brand-teal to-brand-ocean text-white font-semibold">
                     Get A Quote
                   </span>
                 </Link>

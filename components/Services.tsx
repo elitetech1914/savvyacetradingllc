@@ -17,7 +17,7 @@ export default function ServicesSection() {
   return (
     <section id="services" className="w-full max-w-7xl mx-auto px-6 py-10 md:py-18 lg:py-26">
       <div className="flex flex-col items-center text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#483953] mb-6 tracking-tight max-w-3xl">Services — What we build</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-brand-ink mb-6 tracking-tight max-w-3xl">Services — What we build</h2>
         <p className="text-lg text-gray-600 mb-12 max-w-2xl">We match experienced teams and builders to your product needs. Choose a service below to learn more.</p>
 
         {/* Use CSS grid with explicit breakpoints so 3 columns appear at md and up. justify-items-center keeps cards centered in their grid cells and last row centered. */}
@@ -27,18 +27,18 @@ export default function ServicesSection() {
             return (
               <article key={s.id} className="group shadow-inner relative rounded-2xl bg-white/95 p-6 transition-shadow duration-300 hover:shadow-lg hover:scale-[1.01] transform will-change-transform w-full max-w-[22.5rem]" aria-label={s.title}>
                 <div className="flex flex-col items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-purple-50 to-indigo-50 text-[#8a67d8] shadow-sm">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-brand-mist to-brand-sand text-brand-teal shadow-sm">
                     <Icon className="h-6 w-6" aria-hidden />
                   </div>
 
                   <div className="w-full">
-                    <h3 className="text-lg font-semibold text-[#483953] text-center">{s.title}</h3>
-                    <p className="mt-1 text-sm text-[#6b5b6f] text-center">{s.desc}</p>
+                    <h3 className="text-lg font-semibold text-brand-ink text-center">{s.title}</h3>
+                    <p className="mt-1 text-sm text-brand-copy text-center">{s.desc}</p>
 
                     {s.items && (
                       <ul className="mt-3 flex flex-wrap gap-2 justify-center">
                         {s.items.map((it) => (
-                          <li key={it} className="text-xs bg-[#f7f5fb] rounded-full px-3 py-1 text-[#483953] border border-transparent leading-none">{it}</li>
+                          <li key={it} className="text-xs bg-brand-mist rounded-full px-3 py-1 text-brand-ink border border-transparent leading-none">{it}</li>
                         ))}
                       </ul>
                     )}

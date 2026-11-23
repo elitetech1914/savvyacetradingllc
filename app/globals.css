@@ -9,23 +9,23 @@
   --background-end-rgb: 255, 255, 255;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: var(--color-brand-ink);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: var(--color-brand-deep);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary: var(--color-brand-mist);
+  --secondary-foreground: var(--color-brand-ink);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --muted-foreground: var(--color-brand-muted);
+  --accent: var(--color-brand-mist);
+  --accent-foreground: var(--color-brand-ink);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: var(--color-brand-line);
+  --input: var(--color-brand-line);
+  --ring: var(--color-brand-teal);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -64,15 +64,33 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #9795fb, #ca93eb);
+  background: linear-gradient(to bottom, var(--color-brand-navy), var(--color-brand-ocean));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #8766d8, #9795fb);
+  background: linear-gradient(to bottom, var(--color-brand-deep), var(--color-brand-navy));
 }
 
-@theme {
+@theme static {
+  --color-brand-ink: #102c3d;
+  --color-brand-copy: #365664;
+  --color-brand-muted: #506773;
+  --color-brand-teal: #0f766e;
+  --color-brand-deep: #115e59;
+  --color-brand-navy: #173b52;
+  --color-brand-ocean: #146474;
+  --color-brand-navy-hover: #102d41;
+  --color-brand-ocean-hover: #0e4c59;
+  --color-brand-line: #d6e4e3;
+  --color-brand-line-strong: #94b9b3;
+  --color-brand-mist: #eff8f5;
+  --color-brand-sand: #faf6ee;
+  --color-brand-aqua: #a6e0d2;
+  --color-brand-gold: #f5d8a5;
+  --color-brand-bronze: #886027;
+  --color-brand-bronze-deep: #704a20;
+
   /* define keyframes here (Tailwind will pick them up) */
   @keyframes float {
     0%, 100% { transform: translateY(0); }
@@ -228,7 +246,7 @@ canvas {
 .aurora-blob--one {
   width: 60vw;
   height: 60vw;
-  background: rgba(222, 200, 255, 0.9); /* purple */
+  background: var(--color-brand-aqua);
   top: -20%;
   left: -10%;
   animation-delay: 0s;
@@ -238,7 +256,7 @@ canvas {
 .aurora-blob--two {
   width: 60vw;
   height: 60vw;
-  background: rgba(255, 206, 222, 0.9); /* pink */
+  background: var(--color-brand-gold);
   bottom: -20%;
   right: -10%;
   animation-delay: 2s;

@@ -1,15 +1,15 @@
 import LegalPage from "@/components/legal/LegalPage";
 
 const intro = [
-  "ERS Technologies respects the privacy of visitors, clients, and collaborators who use our website and services. This Privacy Policy explains what information we collect, how we use it, and what choices you have regarding your information.",
-  "This policy applies to online interactions with ERS Technologies, including our website, quote requests, contact forms, and service communications. It does not apply to offline data collection except where expressly incorporated into a service agreement or invoice process.",
+  "Savvy Ace Trading LLC respects the privacy of visitors, clients, and collaborators who use our website and services. This Privacy Policy explains what information we collect, how we use it, and what choices you have regarding your information.",
+  "This policy applies to online interactions with Savvy Ace Trading LLC, including our website, quote requests, contact forms, and service communications. It does not apply to offline data collection except where expressly incorporated into a service agreement or invoice process.",
 ];
 
 const sections = [
   {
     title: "Consent",
     paragraphs: [
-      "By using our website, requesting information from us, or engaging ERS Technologies for services, you consent to this Privacy Policy and agree to its terms.",
+      "By using our website, requesting information from us, or engaging Savvy Ace Trading LLC for services, you consent to this Privacy Policy and agree to its terms.",
     ],
   },
   {
@@ -42,21 +42,21 @@ const sections = [
   {
     title: "No Sale or Sharing of User Data",
     paragraphs: [
-      "ERS Technologies does not sell collected user data. We also do not share collected user data with third parties for their independent marketing, advertising, or promotional use.",
+      "Savvy Ace Trading LLC does not sell collected user data. We also do not share collected user data with third parties for their independent marketing, advertising, or promotional use.",
       "Where necessary to operate our website, process payments, communicate with clients, deliver services, maintain security, or comply with legal obligations, we may use trusted service providers that process information only on our behalf and according to applicable privacy and confidentiality requirements.",
     ],
   },
   {
     title: "Log Files",
     paragraphs: [
-      "Like many websites, ERS Technologies uses standard log files and analytics records. These may include IP addresses, browser type, internet service provider, date and time stamps, referring and exit pages, device details, and click or session information.",
+      "Like many websites, Savvy Ace Trading LLC uses standard log files and analytics records. These may include IP addresses, browser type, internet service provider, date and time stamps, referring and exit pages, device details, and click or session information.",
       "This information is generally used to analyze trends, administer the website, understand visitor behavior, improve performance, and gather aggregated demographic insights. It is not used by itself to directly identify individual visitors in most circumstances.",
     ],
   },
   {
     title: "Cookies and Web Beacons",
     paragraphs: [
-      "ERS Technologies may use cookies, pixels, web beacons, and similar technologies to remember preferences, improve website functionality, understand traffic patterns, and tailor content or outreach. Cookies can also help us analyze how visitors use the site so we can improve performance and user experience.",
+      "Savvy Ace Trading LLC may use cookies, pixels, web beacons, and similar technologies to remember preferences, improve website functionality, understand traffic patterns, and tailor content or outreach. Cookies can also help us analyze how visitors use the site so we can improve performance and user experience.",
       "You can control or disable cookies through your browser settings. Doing so may affect how certain parts of the website function.",
     ],
   },
@@ -64,13 +64,13 @@ const sections = [
     title: "Google and Similar Third-Party Technologies",
     paragraphs: [
       "We may use third-party analytics, advertising, or performance tools, including Google services where enabled, to understand audience behavior and improve website visibility. Those providers may use cookies or similar technologies to collect information about your browsing activity across websites and sessions.",
-      "ERS Technologies does not control the cookies used by third-party advertising or analytics providers. You can review provider privacy policies and use your browser or available ad settings to limit or disable this type of tracking.",
+      "Savvy Ace Trading LLC does not control the cookies used by third-party advertising or analytics providers. You can review provider privacy policies and use your browser or available ad settings to limit or disable this type of tracking.",
     ],
   },
   {
     title: "Third-Party Privacy Policies",
     paragraphs: [
-      "This Privacy Policy applies only to ERS Technologies and does not apply to third-party advertisers, payment providers, integrations, linked websites, or external platforms. We encourage you to review the privacy policies of those third parties for more information about their practices and opt-out procedures.",
+      "This Privacy Policy applies only to Savvy Ace Trading LLC and does not apply to third-party advertisers, payment providers, integrations, linked websites, or external platforms. We encourage you to review the privacy policies of those third parties for more information about their practices and opt-out procedures.",
       "You may also choose to disable cookies through your browser settings. More detailed information about cookie management is typically available through your browser provider.",
     ],
   },
@@ -90,14 +90,14 @@ const sections = [
   {
     title: "Children's Information",
     paragraphs: [
-      "Protecting children online is important to us. ERS Technologies does not knowingly collect personal information from children under 13 years of age through this website.",
+      "Protecting children online is important to us. Savvy Ace Trading LLC does not knowingly collect personal information from children under 13 years of age through this website.",
       "If you believe a child has provided personal information through our site, contact us promptly and we will take reasonable steps to remove the information from our records.",
     ],
   },
   {
     title: "Contact",
     paragraphs: [
-      "If you have questions about this Privacy Policy or about how ERS Technologies handles your information, please contact us using the details below.",
+      "If you have questions about this Privacy Policy or about how Savvy Ace Trading LLC handles your information, please contact us using the details below.",
     ],
   },
 ] as const;

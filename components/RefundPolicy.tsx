@@ -1,7 +1,7 @@
 import LegalPage from "@/components/legal/LegalPage";
 
 const intro = [
-  "ERS Technologies handles refund requests according to the service purchased, the stage of the project, and whether work has already been delivered, approved, revised, or moved into production.",
+  "Savvy Ace Trading LLC handles refund requests according to the service purchased, the stage of the project, and whether work has already been delivered, approved, revised, or moved into production.",
   "Because many of our services involve custom creative, technical, and consulting work, refund eligibility is limited once substantial work begins or once you approve a concept, draft, milestone, or deliverable.",
 ];
 
@@ -9,8 +9,8 @@ const sections = [
   {
     title: "30-Day Refund Policy",
     paragraphs: [
-      "ERS Technologies offers a 30-day refund review window from the original purchase date unless a different written agreement applies. Refund requests submitted within 30 days will be reviewed according to the service purchased, the project stage, approvals, revisions, production status, third-party costs, and the other terms in this Refund Policy.",
-      "Refund requests submitted after 30 days from the original purchase date are generally not eligible for refund review unless required by applicable law or expressly agreed in writing by ERS Technologies.",
+      "Savvy Ace Trading LLC offers a 30-day refund review window from the original purchase date unless a different written agreement applies. Refund requests submitted within 30 days will be reviewed according to the service purchased, the project stage, approvals, revisions, production status, third-party costs, and the other terms in this Refund Policy.",
+      "Refund requests submitted after 30 days from the original purchase date are generally not eligible for refund review unless required by applicable law or expressly agreed in writing by Savvy Ace Trading LLC.",
     ],
   },
   {
@@ -53,20 +53,20 @@ const sections = [
   {
     title: "VI. Change of Mind",
     paragraphs: [
-      "Refunds are not available for change-of-mind cancellations, internal disagreement, delayed internal approvals, business renaming, business closure, or other reasons unrelated to ERS Technologies' service performance.",
+      "Refunds are not available for change-of-mind cancellations, internal disagreement, delayed internal approvals, business renaming, business closure, or other reasons unrelated to Savvy Ace Trading LLC' service performance.",
     ],
   },
   {
     title: "VII. Specific Refund Conditions",
     paragraphs: [
-      "Where a refund review is considered, ERS Technologies may evaluate the request based on timing, proof of the issue raised, project communication history, and the portion of work already completed. Duplicate charges may be corrected in full where verified.",
+      "Where a refund review is considered, Savvy Ace Trading LLC may evaluate the request based on timing, proof of the issue raised, project communication history, and the portion of work already completed. Duplicate charges may be corrected in full where verified.",
       "For bundled packages, any refund review applies only to the service element that has not begun or has not materially progressed. Services already delivered, approved, revised, or put into production are generally excluded.",
     ],
     bullets: [
       "Refunds are generally not available for special or promotional packages",
       "Refunds are generally not available after the primary concept, draft, or direction has been approved",
       "Refunds are generally not available after revisions have been requested",
-      "Refunds may be denied if the cancellation is unrelated to ERS Technologies' performance",
+      "Refunds may be denied if the cancellation is unrelated to Savvy Ace Trading LLC' performance",
       "Refunds may be denied if the project has been inactive because the client did not respond for more than two weeks",
       "Refunds may be denied if policies or agreed project terms have been violated",
       "Refunds may be denied if another provider has been engaged on the same project without disclosure where that impacts our work",
@@ -81,8 +81,8 @@ const sections = [
       "Promotional offers are non-refundable. Refunds do not apply to marketing retainers, SEO, hosting, domain services, printing, third-party fees, or similar services once purchased or activated.",
       "For websites, apps, games, VR experiences, AI systems, or custom technical builds, refunds are not available once design approval has been given and development or implementation has started. For publishing and creative services, refunds are not available once approved deliverables move into formatting, production, print, distribution, or account setup.",
       "Project communication should be maintained through the registered email address or other approved communication channel provided by the client. If we send at least three project emails or reminders and receive no response within seven consecutive working days after delivery, the project may be deemed accepted for purposes of fulfillment and refund review.",
-      "If a client remains non-responsive for 10 consecutive days or more during an active delivery or review stage, any money-back or early-stage refund consideration may become void at ERS Technologies' discretion.",
-      "If a refund is issued, you may not use unpaid-for concepts, drafts, designs, code, content, deliverables, or other work product created by ERS Technologies as part of the refunded portion of the project.",
+      "If a client remains non-responsive for 10 consecutive days or more during an active delivery or review stage, any money-back or early-stage refund consideration may become void at Savvy Ace Trading LLC' discretion.",
+      "If a refund is issued, you may not use unpaid-for concepts, drafts, designs, code, content, deliverables, or other work product created by Savvy Ace Trading LLC as part of the refunded portion of the project.",
     ],
   },
 ] as const;
